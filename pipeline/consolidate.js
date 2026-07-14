@@ -4,6 +4,8 @@
  *
  * Inputs (all under data/):
  *   - raw_dialogue*.json, chunks_c/*.json : arrays of {formId,responseIndex,editorId,text}
+ *   - extracted_*.jsonl                   : one {formId,responseIndex,editorId,text} object per line
+ *                                            (output of pipeline/xedit/extract_dialogue.pas)
  *   - all_formids.txt                     : master list "XXXXXX:Skyrim.esm" (one per line)
  *
  * Output:
@@ -23,27 +25,41 @@ const OUT = path.join(DATA, 'dialogue_en.json')
 
 const key6 = (formId) => String(formId).split(':')[0].trim().toUpperCase()
 
-// Collect every {formId,responseIndex,text} record from all JSON sources.
+// Collect every {formId,responseIndex,text} record from all JSON/JSONL sources.
 const records = new Map() // formId6 -> Map(responseIndex -> text)
-function ingest(file) {
+function ingestRecord(r) {
+  if (!r || !r.formId || typeof r.text !== 'string') return
+  const k = key6(r.formId)
+  if (!records.has(k)) records.set(k, new Map())
+  const ri = Number.isFinite(r.responseIndex) ? r.responseIndex : 0
+  // First writer wins per (formId,responseIndex); sources are duplicates of each other.
+  if (!records.get(k).has(ri)) records.get(k).set(ri, r.text)
+}
+function ingestJson(file) {
   let arr
   try { arr = JSON.parse(fs.readFileSync(file, 'utf8')) } catch { return }
   if (!Array.isArray(arr)) return
-  for (const r of arr) {
-    if (!r || !r.formId || typeof r.text !== 'string') continue
-    const k = key6(r.formId)
-    if (!records.has(k)) records.set(k, new Map())
-    const ri = Number.isFinite(r.responseIndex) ? r.responseIndex : 0
-    // First writer wins per (formId,responseIndex); sources are duplicates of each other.
-    if (!records.get(k).has(ri)) records.get(k).set(ri, r.text)
+  arr.forEach(ingestRecord)
+}
+function ingestJsonl(file) {
+  let text
+  try { text = fs.readFileSync(file, 'utf8') } catch { return }
+  for (const line of text.split(/\r?\n/)) {
+    if (!line.trim()) continue
+    try { ingestRecord(JSON.parse(line)) } catch { /* skip malformed line */ }
   }
 }
 
-const sources = []
-for (const f of fs.readdirSync(DATA)) if (/^raw_dialogue.*\.json$/.test(f)) sources.push(path.join(DATA, f))
+const jsonSources = []
+const jsonlSources = []
+for (const f of fs.readdirSync(DATA)) {
+  if (/^raw_dialogue.*\.json$/.test(f)) jsonSources.push(path.join(DATA, f))
+  if (/^extracted_.*\.jsonl$/.test(f)) jsonlSources.push(path.join(DATA, f))
+}
 const chunksDir = path.join(DATA, 'chunks_c')
-if (fs.existsSync(chunksDir)) for (const f of fs.readdirSync(chunksDir)) if (/\.json$/.test(f)) sources.push(path.join(chunksDir, f))
-sources.sort().forEach(ingest)
+if (fs.existsSync(chunksDir)) for (const f of fs.readdirSync(chunksDir)) if (/\.json$/.test(f)) jsonSources.push(path.join(chunksDir, f))
+jsonSources.sort().forEach(ingestJson)
+jsonlSources.sort().forEach(ingestJsonl)
 
 // Build canonical map: responses joined in responseIndex order.
 const dialogue = {}

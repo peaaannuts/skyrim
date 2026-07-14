@@ -7,7 +7,8 @@
 ## データフロー
 
 ```
-Skyrim.esm ──(抽出: 実機のみ)──> data/raw_dialogue*.json, chunks_c/*.json
+Skyrim.esm ──(抽出: 実機のみ、xEdit Pascalスクリプト)──> data/raw_dialogue*.json,
+                                                          chunks_c/*.json, extracted_*.jsonl
                                          │
                         node pipeline/consolidate.js   （鍵不要・どこでも可）
                                          ▼
@@ -68,10 +69,31 @@ cd sp-plugin && npm run build
 ## 未抽出26,597件の抽出について（実機タスク）
 
 英語テキストの抽出は `Skyrim.esm` を読む処理なので**実機でしか実行できない**。
-対象FormIDは `data/formid_remaining_0/1/2.txt` に分割済み。抽出したら
-`{formId,responseIndex,editorId,text}` 形式のJSONで `data/` に置き、再度 `consolidate.js`
-→ `translate.js` を回す。DeepL Free は月50万文字なので、全体（概算1.5〜2M文字）は
-**複数月に分割**するか DeepL Pro を検討。
+対象FormIDは `data/formid_remaining_0/1/2.txt` に分割済み。
 
-> 抽出に使っているツール／スクリプト（xEdit, xTranslator, 自作スクリプト等）が分かれば、
-> `formid_remaining_*.txt` を入力にしたバッチ抽出の補助スクリプトを用意できる。
+**ツール: xEdit (SSEEdit)。** SE側にCK未インストールのため、Bethesda ESM形式を
+CK無しで読める標準ツールとして選定。`pipeline/xedit/` に2本のPascalスクリプトを用意した
+（**未実機検証** — INFOレコードのResponses配列の正確な内部パスはこの開発環境では
+確認できないため、必ず①→②の順で実行すること）：
+
+1. **`pipeline/xedit/probe_info.pas`** — 1件（`055DF8`）の要素ツリーを丸ごとログ出力し、
+   応答テキストの Signature/Path を目視確認する。想定は `NAM1` だが、これは
+   Bethesda ESM形式の一般的知識に基づく見込みであり断定ではない。
+2. **`pipeline/xedit/extract_dialogue.pas`** — バッチ抽出本体。
+   - まず `TEST_MODE := True` のまま実行 → 既知2件（`055DF8`, `093131`）を抽出し、
+     Phase 1 で照合済みの正解テキスト（"No doubt he thought…" / "With good
+     planning…"）と自動で突き合わせて PASS/FAIL をログ出力する。
+   - **両方 PASS した場合のみ** `TEST_MODE := False` にし、`BATCH_INDEX` を
+     `0 → 1 → 2` と変えて3回実行。`data/formid_remaining_N.txt` を読み、
+     `data/extracted_N.jsonl` に出力する（1行1JSONオブジェクト、
+     `{formId,responseIndex,editorId,text}`）。
+   - FAIL した場合は `RESPONSE_TEXT_SIGNATURE` 定数（probe結果を見て）を直してから再試行。
+
+実行場所: xEditの `Edit Scripts` フォルダへ `.pas` をコピー → SSEEdit起動
+（Skyrim.esmのみロード）→ 左ペインでSkyrim.esmを右クリック →
+"Apply Script..." → スクリプト選択 → OK。ログはメッセージウィンドウに出る。
+
+抽出後、`data/extracted_0/1/2.jsonl` をこのリポジトリへコミット・push すれば、
+`consolidate.js` が既存の `raw_dialogue*.json`/`chunks_c/*.json` と合わせて自動で
+取り込む（`.jsonl` 対応済み）。DeepL Free は月50万文字なので、全体（概算1.5〜2M文字）は
+**複数月に分割**するか DeepL Pro を検討。

@@ -1,0 +1,632 @@
+[
+  {
+    "formId": "0366FA:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "What news have you heard from the war, Irnskar?"
+  },
+  {
+    "formId": "0366FB:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Slow, but looking good, sir."
+  },
+  {
+    "formId": "0366FC:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Sir, we can't just keep trading blows with the rebels like this - it's only strengthening their resolve."
+  },
+  {
+    "formId": "0366FD:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Yes, Papa."
+  },
+  {
+    "formId": "0366FE:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "My dear Bryling. Barring any... fancy and folly... the good people of Haafingar are surely capable of dealing with the odd highwayman or stray dog."
+  },
+  {
+    "formId": "0366FF:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Rest up, scum. Probably getting executed tomorrow."
+  },
+  {
+    "formId": "036700:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm not just talking about my subjects. I'm talking about my people: the proud Nords of Skyrim."
+  },
+  {
+    "formId": "036701:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Maybe we'll have better luck tomorrow."
+  },
+  {
+    "formId": "036702:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Humph. Some daughter you are."
+  },
+  {
+    "formId": "036703:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "New orders for the soldiers, Legate. Make sure they're distributed as noted."
+  },
+  {
+    "formId": "036704:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "You're right, of course. But when this war is over, I'll gladly resign and we can stop sneaking around like this."
+  },
+  {
+    "formId": "036705:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Sure, whatever."
+  },
+  {
+    "formId": "036706:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Steward, when is my appointment to meet with General Tullius? There are some issues we must speak about."
+  },
+  {
+    "formId": "036707:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I mean, the Redguards fought off the Aldmeri and the Empire, and now Hammerfell is an independent state. That's all we Nords want for Skyrim!"
+  },
+  {
+    "formId": "036708:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "They aren't my \"people.\" I'm with the Empire because they pay me. And that means I'm out here, and you're in there. So shut up, scum!"
+  },
+  {
+    "formId": "036709:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm afraid \"acceptable\" just isn't acceptable anymore. I'm sure they can spare a few more coins in monthly rent."
+  },
+  {
+    "formId": "03670A:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I suppose. But Svari, we don't steal. We're better than that. Understand?"
+  },
+  {
+    "formId": "03670B:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I know of a ship coming in from Hammerfell. Some cargo might get \"lost\"..."
+  },
+  {
+    "formId": "03670C:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "He uses all of Haafingar's resources, and doesn't answer to me in the slightest? This hardly seems fair."
+  },
+  {
+    "formId": "03670D:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Big shipment coming in later tonight. I need you three working late."
+  },
+  {
+    "formId": "03670E:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Which one is that again?"
+  },
+  {
+    "formId": "03670F:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Nonsense, dear. I've had more visitors than ever seeking the wisdom of the hearth goddesses."
+  },
+  {
+    "formId": "036710:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I can commission one from the Radiant Raiment. It won't be cheap, but if you want the best, they're the only choice."
+  },
+  {
+    "formId": "036711:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm on my feet all day. Can you please do this one thing for me?"
+  },
+  {
+    "formId": "036712:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Yes, and I'm also aware of how necessary my divinations and wards have been in the city's defense. My experiments are all I ask for in return."
+  },
+  {
+    "formId": "036713:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Madame Endarie insisted. She made it free of charge, in honor of your lenience about last month's rent discrepancies."
+  },
+  {
+    "formId": "036714:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Your compassion is admirable, but you see, we cannot help them all. The poor must learn from the examples of the gods and raise themselves up."
+  },
+  {
+    "formId": "036715:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Indeed I have, sir. Elven weapons for their armies, sir. Elven material, but poor workmanship, like most of what we get from them."
+  },
+  {
+    "formId": "036716:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "On threat of what, exactly? This city wouldn't run without me! Now if you'll excuse me, my work awaits."
+  },
+  {
+    "formId": "036717:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Fihada, where did you learn to make bows so well?"
+  },
+  {
+    "formId": "036718:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "You won't like it, my lady."
+  },
+  {
+    "formId": "036719:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "What are you going to do after you graduate? I'm thinking of joining the Legion. I hear they're looking for skalds. Just think. Me - a war bard."
+  },
+  {
+    "formId": "03671A:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm serious. If Erikur knew about us, he'd force you to resign from your position. And without you, he'd have the jarl bent around his little finger."
+  },
+  {
+    "formId": "03671B:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm serious. If Erikur knew about us, he'd force you to resign from your position. And without you helping the Jarl, Solitude would be weaker."
+  },
+  {
+    "formId": "03671C:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "As always, Lord, your loyalty is a shining example to us all."
+  },
+  {
+    "formId": "03671D:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Vivienne, could you check out supplies of mandrake root?"
+  },
+  {
+    "formId": "03671E:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Sister dear, could you try sewing these sleeves a little tighter? We can't have our customers looking sloppy because of your work."
+  },
+  {
+    "formId": "03671F:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I told you you wouldn't like the news."
+  },
+  {
+    "formId": "036720:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "As you know, Solitude's coffers are much depleted by the war efforts. Thane Erikur, you have a strong head for business. What do you suggest?"
+  },
+  {
+    "formId": "036722:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "What could be more important than hearing the prayers of the faithful, and answering the questions of the dedicated?"
+  },
+  {
+    "formId": "036723:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Yes, Brother. I'm sure they'll agree it's a fair price to pay in order to avoid interacting with you on a daily basis."
+  },
+  {
+    "formId": "036724:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Simple. Let the Empire fight its own war, with its own funds, and without hijacking our supplies and soldiers. Let Haafingar rebuild."
+  },
+  {
+    "formId": "036725:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Kynareth has blessed you with tremendous compassion, Silana. You will find a way, I'm sure of it."
+  },
+  {
+    "formId": "036726:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I fear attendance is down. There are so few worshippers coming to see us. Could it be that the war has weakened their faith?"
+  },
+  {
+    "formId": "036727:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Lady Ateia has already arranged for me to perform in the court of the Jarl of Falkreath."
+  },
+  {
+    "formId": "036728:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "In that case, I'm pretty sure it tried to buy me a drink last night."
+  },
+  {
+    "formId": "036729:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I swear, those scheming elves charge us twice what anyone else would pay."
+  },
+  {
+    "formId": "03672A:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Thane Bryling, what do you have to report about the state of Haafingar's defenses?"
+  },
+  {
+    "formId": "03672B:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Trouble on the roads and cities means less commerce. Less commerce means less money and more starving people. And that means more crime."
+  },
+  {
+    "formId": "03672C:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Yeah, we'll get the valuables out of there, no problem!"
+  },
+  {
+    "formId": "03672D:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Oh, yes sir. I feel many of Solitude's families are having trouble getting by, and the wealthy do nothing to help them!"
+  },
+  {
+    "formId": "03672E:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "This is an unfortunate but unavoidable ebb in revenue. But as long as we continue to support the Empire, our sacrifices will be well rewarded."
+  },
+  {
+    "formId": "03672F:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Don't you think I know that? But these commands come straight from Cyrodiil."
+  },
+  {
+    "formId": "03672F:Skyrim.esm",
+    "responseIndex": 1,
+    "editorId": null,
+    "text": "We must maintain order and put the rebellious jarls in their place, before we have a full-scale war on our hands."
+  },
+  {
+    "formId": "036730:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "You'd make a better Imperial ranger than me. I may have charmed the locals, but my fellow soldiers hated my waggling tongue."
+  },
+  {
+    "formId": "036731:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "We'll make it, Greta. We always have so far..."
+  },
+  {
+    "formId": "036732:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Scary, thinking of those boots with an army of Elven weapons at their command. Let's be thankful they're half a world away, eh?"
+  },
+  {
+    "formId": "036734:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm afraid he's had to reschedule, my grace. By all accounts, waging war takes his every moment."
+  },
+  {
+    "formId": "036735:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Mistress, a word?"
+  },
+  {
+    "formId": "036736:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "My lady... Surely you're not that naive. Such foolishness would only leave us defenseless. The rebels would storm the palace in an afternoon."
+  },
+  {
+    "formId": "036737:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Understood, sir."
+  },
+  {
+    "formId": "036738:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "It's all we've got for today. Don't be greedy."
+  },
+  {
+    "formId": "036739:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Shut up, scum."
+  },
+  {
+    "formId": "03673A:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "\"Fair\" is a word rarely applied to politics, my grace. I'm afraid you must learn to accept this."
+  },
+  {
+    "formId": "03673B:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Mistress, the people of Solitude are destitute. Many are starving and desperate for work. We need to be more active, to reach out to them."
+  },
+  {
+    "formId": "03673C:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "The news is the same as it's been for the rest of the war, your grace. Our borders are secure, but at the cost of the guards of our towns and roads."
+  },
+  {
+    "formId": "03673D:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Slow's the only way to do it! Work too hard and you'll warp the wood."
+  },
+  {
+    "formId": "03673E:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Passably. Aia is my star pupil. None of the others can hold a candle to her. Especially not that wretched Illdi."
+  },
+  {
+    "formId": "03673F:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Some of them have a long way to go, but they're mostly passable. Don't let them hear I said that, though!"
+  },
+  {
+    "formId": "036740:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Bunch of distractions, if you ask me. They just interrupt the rest of my work."
+  },
+  {
+    "formId": "036742:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Hey, jailor! What I don't understand is why you're siding with the Imperials."
+  },
+  {
+    "formId": "036743:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "My contact, she says Hammerfell steel is much desired by certain parties."
+  },
+  {
+    "formId": "036744:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Very well. But I suspect her grace will not be pleased."
+  },
+  {
+    "formId": "036745:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I barely make enough for us to eat as it is, Father. You can't just drink it all away."
+  },
+  {
+    "formId": "036746:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "That was suspiciously nice of her. I thought she hated everyone."
+  },
+  {
+    "formId": "036747:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'll talk with Jala, dear. I'm sure she'll accept a potato as repayment."
+  },
+  {
+    "formId": "036748:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Why should we settle for half a fin when we could just take the whole whale?"
+  },
+  {
+    "formId": "036749:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I'm well aware that I won't like it. But it's my duty to keep my people safe. Tell me."
+  },
+  {
+    "formId": "03674B:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Well, did you bring back any mead?"
+  },
+  {
+    "formId": "03674C:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Sir, this is costing lives of both Imperial loyalists and Skyrim citizens alike. And it's winning the rebels support where they had none before."
+  },
+  {
+    "formId": "03674D:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Maybe. I'll see if I feel like it."
+  },
+  {
+    "formId": "03674E:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Humph. That's only a problem for people who can't afford to hire their own security."
+  },
+  {
+    "formId": "03674F:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Alms? Alms for a veteran?"
+  },
+  {
+    "formId": "036750:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Spare a bite for a poor old veteran?"
+  },
+  {
+    "formId": "036751:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Please, ma'am, I've got nowhere to go..."
+  },
+  {
+    "formId": "036752:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I lost my eye defending the Empire... Spare some grub for a veteran?"
+  },
+  {
+    "formId": "036753:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "I said shut up, scum!"
+  },
+  {
+    "formId": "036754:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Come now. You'll want to show up in Sovngarde refreshed. You got an eternity of merrymakin' ahead of you."
+  },
+  {
+    "formId": "036755:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Guess the headsman's been busy with all of your friends. Ha ha ha ha ha!"
+  },
+  {
+    "formId": "036756:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Falk, you shouldn't have come. You know what'd happen if people would find out about us."
+  },
+  {
+    "formId": "036757:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Where've you been all day?"
+  },
+  {
+    "formId": "036758:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Come on, Heimvar. My son could stoke the forge better than you do!"
+  },
+  {
+    "formId": "036759:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "You're making progress, Heimvar. But my boy could still work the bellows better than you do!"
+  },
+  {
+    "formId": "03675A:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Shoo! Go away! You get nothing from me."
+  },
+  {
+    "formId": "03675B:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "You bother me again, maybe you will not walk away. Understand?"
+  },
+  {
+    "formId": "03675C:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Sorry, I have everyone I need at the warehouse. Times are tight."
+  },
+  {
+    "formId": "03675D:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Just a little one! I was hungry!"
+  },
+  {
+    "formId": "03675E:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "That is correct. Those orders have been delivered by special courier. I can't trust some of our normal distribution channels."
+  },
+  {
+    "formId": "03675F:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Sister, how is my fortune coming along?"
+  },
+  {
+    "formId": "036760:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Again? He can't simply cancel an appointment with the jarl! He serves in my capital city!"
+  },
+  {
+    "formId": "036761:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "So it's okay if your people rebel against the Empire, but not mine?"
+  },
+  {
+    "formId": "036762:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Oh, we'll make sure it's emptied out by morning. You can trust us!"
+  },
+  {
+    "formId": "036763:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "What troubles you, darling?"
+  },
+  {
+    "formId": "036764:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Huh. Fair or not, they'll pay it, and that's all I need to care about. Bear that in mind, Sister."
+  },
+  {
+    "formId": "036765:Skyrim.esm",
+    "responseIndex": 0,
+    "editorId": null,
+    "text": "Father, could you clean up the house a little while I'm away?"
+  }
+]

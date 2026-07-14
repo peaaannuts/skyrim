@@ -1,0 +1,210 @@
+# SubtitleTranslator
+
+Skyrim SE を英語音声・字幕で学習用にプレイ中、字幕が読み取れない行だけホットキーで
+日本語訳をオーバーレイ表示する MOD。常時表示ではなく on-demand（英語を読む訓練を妨げないため）。
+
+## アーキテクチャ（確定済み・再検討不要）
+
+- **翻訳API：** DeepL API（Free tier、ユーザー自身のキー。`pipeline/config.local.json` に設定済み、
+  コミット・ハードコード禁止）
+- **v1スコープ：** vanilla Skyrim.esm のダイアログのみ（有効な261 modプラグインは対象外）。まずPoC。
+- **方式：** ゲーム内でDeepLをリアルタイム呼び出しせず、事前にオフラインで
+  FormID → 日本語 のルックアップテーブルを作る（会話中のAPI遅延を避けるため）。
+
+### 3コンポーネント構成
+
+| # | 内容 | 場所 |
+|---|---|---|
+| A | ビルド時の一回限りのデータパイプライン（抽出＋DeepL翻訳）。MOD本体には含まれない | `pipeline/`, `data/` |
+| B | ネイティブSKSEプラグイン（C++, CommonLibSSE-NG）。現在再生中のTopicInfo（INFOレコード）のFormIDを検知してスクリプト層に渡す | `native-plugin/` |
+| C | Skyrim Platform（TypeScript）プラグイン。ホットキーをポーリングし、Bから現在のFormIDを取得、AのJSONで日本語を引き、Skyrim PlatformのCEFオーバーレイで英語字幕の下に表示 | `sp-plugin/` → MO2 `mods/jp-subtitle-ts/` |
+
+## 現状（2026-07-14 時点）
+
+- **Component B：** ビルド成功・in-game検証済み。`src/main.cpp` は本実装済み。
+  `TESTopicInfoEvent` シンクで「話者FormID → アクティブなTopicInfo FormID」を
+  `g_activeBySpeaker` マップに保持（BEGINで記録、ENDで削除。瞬間BEGIN/ENDのノイズは残らない）。
+  Papyrus native関数を2つ登録：`GetTestValue()`（0x12345を返すサニティ用）と
+  `GetCurrentDialogueFormID()`（SubtitleManagerで表示中字幕の話者を特定→その話者の
+  アクティブTopicInfo FormIDを返す。0=該当なし。呼ばれるたび `[QUERY]` ログを出す）。
+- **Component C：** 実装済み・**in-game未検証（次にやること）**。`sp-plugin/src/index.ts`。
+  F10(=68)で `GetCurrentDialogueFormID` を呼び、`translations.json` で日本語を引いて
+  CEFオーバーレイに表示。F9(=67)で非表示。表示は `browser.executeJavaScript` で
+  固定配置divを注入（共有UIページを差し替えない）。`translations.json` は
+  **私が手動翻訳したBalgruuf会話4行のシードのみ**（055DF8, 093131, 0E24E7, 092D9E）。
+  未登録の行は赤字で「［FormID XXXXXX の訳は未登録］」を表示 = 経路実証用プレースホルダー。
+- **Component A：** 全31,465件中 約650件「抽出済み」（`data/done_formids.json`。
+  **抽出のみで翻訳はまだ**。`data/raw_dialogue*.json` は英語の生テキスト）。
+  30,781件が `data/formid_remaining_0/1/2.txt` に未処理で振り分け済み。翻訳は未着手。
+  DeepL Free tier の月間予算は500,000文字 — 全件で概算1.5〜2M文字必要なため、
+  低価値な行（汎用戦闘バーク等）のフィルタリングか複数月にわたる分割実行が必須。
+- **Component C：** 未着手。
+
+## 検証済みの事実（Phase 1、in-game実証済み）
+
+- **`TESTopicInfoEvent` が正しく機能する。** `ScriptEventSourceHolder` 経由で
+  `kDataLoaded` 時に登録すると、ダイアログの `topicInfoFormID`（INFOレコードのFormID）を
+  BEGIN/ENDで受け取れる。捕捉したFormIDが houseCARL のデータ層の実際のINFOレコード
+  テキストと完全一致することを照合済み（例: `055DF8`→"No doubt he thought it was the only
+  way to make his point..." 、`093131`→"With good planning and constant vigilance."）。
+  → **翻訳ルックアップテーブル（FormID→日本語）と直接突き合わせ可能。**
+- **ノイズが大量にある。** プレイヤーの近くにいないNPC（実測では Frea = `04017A0D`、
+  Dragonborn DLC）が背景シーン評価で毎秒何十回もTopicInfoをBEGIN/END発火する。
+  全ログの大半がこれ。**見分け方：本物の再生中の台詞は BEGIN→END に実時間の間隔
+  （数百ms〜数秒）があるが、ノイズは BEGIN と END が同一ミリ秒**（実際には喋っていない）。
+- **`SubtitleManager` の speaker は話者のFormIDであって台詞（INFO）のFormIDではない。**
+  ポーリング単独では翻訳テーブルを引けない。TopicInfoEvent と組み合わせる必要がある。
+- **設計方針（確定）：** MODはオンデマンド（ホットキー押下時）なので全イベントをライブ処理
+  する必要はない。ネイティブ側で「話者ごとの現在アクティブな（BEGINしたがまだENDしていない）
+  TopicInfo」を1つ保持し、ホットキー時に (1) SubtitleManagerで表示中字幕の話者を取得 →
+  (2) その話者のアクティブTopicInfo FormIDを引く → (3) 翻訳テーブルで日本語を引く。
+  瞬間BEGIN/ENDのノイズは「アクティブ状態が1ms未満」なので自然に除外される。
+
+## 検証済みの事実（Phase 3a、in-game実証済み）
+
+- **C++→TS の橋は `callNative` で通る。** Skyrim Platform の
+  `callNative(className, functionName, self?, ...args)` で、SKSEプラグインが登録した
+  Papyrus native global関数を同期呼び出しできる。テスト関数 `JpSubtitle.GetTestValue()`
+  が `0x12345`(74565) を返し、TS側が正しく受信、C++側で実際に関数が呼ばれることを両ログで確認。
+  → **計画の選択肢(a)が成立。FormID取得もこの方式で実装する。**
+- **【重要】native関数には `.psc`/`.pex` が必須。** C++で `vm->RegisterFunction` するだけでは
+  VMが型名を知らず、`callNative` は "Native function not found" で失敗する。スクリプト側の
+  `.psc`（型と関数シグネチャの宣言）をコンパイルした `.pex` を同梱して初めてVMがルーティングできる。
+  ネイティブ関数は「2箇所で宣言される1つのもの」（C++登録 + .psc宣言）。
+  現物: `native-plugin/Scripts/Source/JpSubtitle.psc`（`Scriptname JpSubtitle Hidden` +
+  `Int Function GetTestValue() global native`）→ コンパイルして
+  `jp-subtitle-spike/Scripts/JpSubtitle.pex` に配置。
+- **ホットキー検出（`Input.isKeyPressed`）は動作する。** 前フレーム状態を保持した
+  立ち上がりエッジ検出でF10を正しく検知（実測）。DXスキャンコード F10=68。
+- **TS `writeLogs(pluginName, ...)` の出力先** は `<MO2 overwrite>\Platform\Logs\<pluginName>-logs.txt`。
+
+## 未確定・要検証の技術判断
+
+- **ルックアップ未対応行の挙動：** サイレントに何も表示しない vs プレースホルダー表示。未決定。
+- **ホットキー割り当て：** テストではF10(=68)を使用。ロードオーダーに他のホットキー系MOD
+  （Dodge MCO-DXP, TK Dodge RE等）が多数有効なため、本番のキー選定は衝突回避が必要。
+- **オーバーレイ表示（`browser.executeJavaScript`）** は未着手。バニラ字幕下への配置・
+  スタイリング・表示時間は実装時に実機調整。
+
+## ビルド環境（追記）
+
+- Node.js v24 + npm インストール済み（`C:\Program Files\nodejs`）。
+  TSプラグインは `C:\Modding\SubtitleTranslator\sp-plugin`（webpack + ts-loader）。
+  `npm run build` で `build\jp-subtitle.js` を生成 → MO2の
+  `mods\jp-subtitle-ts\Platform\Plugins\jp-subtitle.js` にコピー。
+- **tsconfig 注意：** Node24付属の新しい `@types/node` は TS4.9 でパースエラーになるため、
+  tsconfig に `"types": []` と `"skipLibCheck": true` を設定して自動読み込みを止めてある。
+- Papyrusコンパイラは SkyrimVR 付属のものを使用
+  （`C:\Program Files (x86)\Steam\steamapps\common\SkyrimVR\Papyrus Compiler\PapyrusCompiler.exe`）。
+  SE側にはCK未インストール。.pexフォーマットはSE/VR共通なので問題なし。
+  SE側バニラソースを import_dirs に渡してコンパイル。houseCARL_compile_script 経由。
+
+## 既知のハマりどころ（再発防止）
+
+- **MO2に同名プラグインを出す重複MODフォルダに注意。** 旧セッションが作った
+  `JPSubtitleSpike`（PascalCase）と現行の `jp-subtitle-spike`（kebab-case）が両方存在し、
+  古い方が有効・新しい方が無効になっていて、ビルド更新が一切ゲームに反映されない事故が発生した。
+  現行は `jp-subtitle-spike` が正。`JPSubtitleSpike` は無効化済み（削除推奨）。
+- **MO2起動中に modlist.txt を直接編集しない。** MO2が終了時に自分のメモリ状態で上書きする。
+  編集前にMO2を閉じること。MODの有効/無効は `C:\Modding\MO2\profiles\251102\modlist.txt` の
+  行頭 `+`（有効）/`-`（無効）で制御。
+- **`build.bat` は `cd /d %~dp0` で自分のディレクトリに移動してから xmake を呼ぶこと。**
+  VsDevCmd.bat がカレントディレクトリを変えるため、これがないと xmake.lua が見つからない。
+- **`REX::Singleton` を使うには `pch.h` に `#include <REX/REX/Singleton.h>` が必要**
+  （`RE/Skyrim.h` には含まれない）。
+
+## ビルド環境
+
+- VS2022 Build Tools インストール済み（`C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools`,
+  MSVC v14.44、C++23対応）
+- xmake v3.0.9 インストール済み（`C:\Program Files\xmake\xmake.exe`）
+- CommonLibSSE-NG は `native-plugin/lib/commonlibsse-ng` に submodule 済み
+  （alandtse/CommonLibVR の `ng` ブランチ — 正しいライン）
+- ビルドは VS Developer Shell 経由が必須（`VsDevCmd.bat` を通してから `xmake build`）。
+  `native-plugin/build.bat` にラップ済み。
+
+## MO2 / ロードオーダー
+
+- houseCARL の MO2 instance: `C:\Modding\MO2`
+- Skyrim Platform SDK: `C:\Modding\MO2\mods\Skyrim Platform - A TypeScript SDK for Skyrim\Platform\`
+  （`Modules\skyrimPlatform.ts` にAPI定義、`plugin-example\` にTSプロジェクトの雛形あり）
+
+## 開発方針
+
+- houseCARL の `skse-plugin-authoring` スキルを Component B の作業時は必ず参照する
+  （CommonLibSSE-NGのフック・イベントシンク・native関数登録パターン）
+- 未検証のランタイム挙動は「推測」ではなく「検証すべき事項」として明示する
+  （憶測でAPIやフック名をでっち上げない）
+
+## ⏭ 引継ぎ：次にやること（2026-07-14 セッション終了時点）
+
+**進行中の方針：** ①Component B本実装 → ③Component Cオーバーレイ → ②翻訳パイプライン、の順。
+①③は実装完了、②は未着手。①③のエンドツーエンドPoCの **in-game検証が次の一手**。
+
+### 1. まず：エンドツーエンドPoCのin-game検証（最優先・未実施）
+
+全コンポーネントはビルド・デプロイ済み。ユーザーに以下を実施してもらってログを確認する：
+1. MO2起動 → SKSE経由でゲーム起動 → セーブロード
+2. NPCと会話（ホワイトランのバルグルーフ首長ならシード済み日本語がヒットしやすい）
+3. 字幕表示中に **F10** を押す → 画面下部(下から14%)に日本語オーバーレイが出るか
+4. F9で消える
+
+**確認するログ：**
+- C++側 `C:\Users\japan\Documents\My Games\Skyrim Special Edition\SKSE\jp-subtitle-spike.log`
+  → `[QUERY] speaker=... topicInfo=... text="..."` が出るか（F10押下ごとに1行）
+- TS側 `C:\Modding\MO2\overwrite\Platform\Logs\jp-subtitle-logs.txt`
+  → `hit <FormID> -> <日本語>` または `miss <FormID>` が出るか
+
+**期待結果：** シード4行なら日本語表示、それ以外は赤字「［FormID … の訳は未登録］」。
+どちらでも「会話→FormID捕捉→オーバーレイ描画」の経路が実証できれば①③のPoC成功。
+
+**検証で出うる問題と着眼点：**
+- オーバーレイが全く見えない → `browser.setVisible(true)` でCEFが表示されているか、
+  divのz-index/位置、ページ(既定 index.html)が読めているか。`browser.executeJavaScript`
+  はページのロード完了後でないと効かない可能性 → F10は起動後十分経ってから押す前提。
+- FormIDは取れるが日本語が出ない → `formIdKey()` の整形（下位6桁hex大文字）と
+  translations.jsonのキーが一致しているか。C++の `[QUERY]` の topicInfo と突き合わせる。
+- 会話中に字幕の話者と別NPCのアクティブTopicInfoを拾う → `GetCurrentDialogueFormID` の
+  「forceDisplay優先」ロジックの調整。Phase 1bのノイズ（Frea等の瞬間BEGIN/END）は
+  設計上除外されるはずだが実挙動を確認。
+
+### 2. PoC成功後：② 翻訳パイプライン（Component A）
+
+- `data/raw_dialogue*.json`（英語生テキスト）を DeepL API で日本語化し、
+  `sp-plugin/src/translations.json` を FormID6→日本語 の完全版に置き換える。
+- **DeepL Free tier 月50万文字の制約**：全31,465件で概算1.5〜2M文字。低価値な行
+  （汎用戦闘バーク等。EditorID/内容でフィルタ）を除外＋複数月に分割 or DeepL Proを検討。
+- APIキーは `pipeline/config.local.json`。**外部サービスへの送信・予算消費を伴うので、
+  大きな翻訳実行の前にユーザーに確認する**（②を最後に回したのもこの理由）。
+- 翻訳スクリプトは未作成。Node で書くのが自然（`pipeline/` に置く）。
+
+### 3. その後の磨き込み（未決定事項）
+
+- 本番ホットキーの選定（F10は仮。Dodge MCO-DXP / TK Dodge RE 等と衝突しないキーへ）。
+- 未登録行の挙動（現状プレースホルダー表示。サイレントにするか要相談）。
+- 複数応答（`Responses[N]`, N>0）の扱い。表示の自動消去タイマー等。
+
+## ビルド・デプロイ手順（そのままコピペ可）
+
+**C++（native-plugin）:**
+1. ビルド: `cmd //c 'C:\Modding\SubtitleTranslator\native-plugin\build.bat'`
+   （出力: `native-plugin\build\windows\x64\releasedbg\jp-subtitle-spike.dll`）
+2. デプロイ: `.dll` と `.pdb` を `C:\Modding\MO2\mods\jp-subtitle-spike\SKSE\Plugins\` へコピー。
+   **ゲーム起動中はDLLがロックされコピー不可（"Device or resource busy"）→ ゲーム終了後に。**
+3. `.psc` を変更したら再コンパイル（下記）。
+
+**Papyrus（.psc → .pex）:**
+- `native-plugin/Scripts/Source/JpSubtitle.psc` を houseCARL_compile_script で。
+  `output_dir=C:\Modding\MO2\mods\jp-subtitle-spike`、
+  `import_dirs=C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Scripts\Source`
+  → `jp-subtitle-spike\Scripts\JpSubtitle.pex` に出力。
+- native関数を追加/変更したら **C++登録・.psc宣言・.pex再コンパイルの3つを必ず揃える**。
+
+**TS（sp-plugin）:**
+1. ビルド: `cd C:\Modding\SubtitleTranslator\sp-plugin && npm run build`
+   （出力: `build\jp-subtitle.js`）
+2. デプロイ: `build\jp-subtitle.js` を
+   `C:\Modding\MO2\mods\jp-subtitle-ts\Platform\Plugins\jp-subtitle.js` へコピー。
+
+**MO2の該当MOD（両方 modlist.txt で `+` = 有効済み）:**
+`jp-subtitle-spike`（DLL+pex）, `jp-subtitle-ts`（js）。旧 `JPSubtitleSpike` は無効(削除推奨)。

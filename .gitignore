@@ -15,6 +15,9 @@ build/
 # --- Local secrets (never commit; see CLAUDE.md) ---
 pipeline/config.local.json
 
+# --- Translation runtime state (machine-local; translations.json is the durable output) ---
+data/translate_progress.json
+
 # --- CommonLibSSE-NG submodule contents (reference via .gitmodules) ---
 native-plugin/lib/commonlibsse-ng/
 

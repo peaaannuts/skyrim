@@ -180,6 +180,9 @@ var
   skyrim: IInterface;
 begin
   Result := 0;
+  // Version banner: if you do NOT see this line in the log, xEdit is running an
+  // OLD copy. Copy this file into <xEdit install>\Edit Scripts\ and re-apply.
+  AddMessage('extract_dialogue.pas VERSION 2026-07-15d');
   skyrim := FileByName('Skyrim.esm');
   if not Assigned(skyrim) then begin
     AddMessage('ERROR: Skyrim.esm not loaded. Load only Skyrim.esm and retry.');

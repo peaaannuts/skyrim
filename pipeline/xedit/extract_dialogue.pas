@@ -7,8 +7,8 @@
 // Run order:
 //   1. TEST_MODE = True (default): self-checks 055DF8 and 093131 against known text.
 //      Apply the script; look for "PASS 055DF8" and "PASS 093131" in the log.
-//   2. If both PASS, set TEST_MODE = False, then run once for each BATCH_INDEX 0,1,2.
-//      Each run reads data/formid_remaining_<N>.txt and writes data/extracted_<N>.jsonl.
+//   2. If both PASS, set TEST_MODE = False and apply once. It processes all three
+//      batches: reads data/formid_remaining_0/1/2.txt, writes data/extracted_0/1/2.jsonl.
 
 unit UserScript;
 

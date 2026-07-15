@@ -72,13 +72,20 @@ cd sp-plugin && npm run build
 対象FormIDは `data/formid_remaining_0/1/2.txt` に分割済み。
 
 **ツール: xEdit (SSEEdit)。** SE側にCK未インストールのため、Bethesda ESM形式を
-CK無しで読める標準ツールとして選定。`pipeline/xedit/` に2本のPascalスクリプトを用意した
-（**未実機検証** — INFOレコードのResponses配列の正確な内部パスはこの開発環境では
-確認できないため、必ず①→②の順で実行すること）：
+CK無しで読める標準ツールとして選定。`pipeline/xedit/` に2本のPascalスクリプトを用意した。
 
-1. **`pipeline/xedit/probe_info.pas`** — 1件（`055DF8`）の要素ツリーを丸ごとログ出力し、
-   応答テキストの Signature/Path を目視確認する。想定は `NAM1` だが、これは
-   Bethesda ESM形式の一般的知識に基づく見込みであり断定ではない。
+> **実機で構造確認済み（2026-07-15）：** 応答テキストは
+> `INFO \ Responses \ Response \ NAM1 - Response Text` にある（`probe_info.pas` で確認、
+> `055DF8` の英文が既知データと一致）。よって **`probe_info.pas` は実行不要**。
+> 直接 `extract_dialogue.pas` の TEST_MODE から始めてよい。
+
+> **スクリプトはASCIIのみで記述。** xEdit のスクリプトパーサを日本語(CP932)コードページで
+> 読むと、日本語コメント中のバイト `0x7D`（`}`）が `{ }` ブロックコメントを途中で閉じて
+> 構文エラーになる事故があったため、`.pas` は ASCII のみ・`{ }` ブロックコメント不使用に
+> してある。日本語の説明はこの README 側に置く。
+
+1. **`pipeline/xedit/probe_info.pas`**（任意・参考用）— 1件（`055DF8`）の要素ツリーを
+   丸ごとログ出力し、応答テキストの Signature/Path を目視確認する。上記の通り確認済み。
 2. **`pipeline/xedit/extract_dialogue.pas`** — バッチ抽出本体。
    - まず `TEST_MODE := True` のまま実行 → 既知2件（`055DF8`, `093131`）を抽出し、
      Phase 1 で照合済みの正解テキスト（"No doubt he thought…" / "With good

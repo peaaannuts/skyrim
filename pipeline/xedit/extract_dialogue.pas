@@ -39,17 +39,11 @@ const
   BATCH_INDEX = 0;     // TEST_MODE=False のとき: 0, 1, 2 の3回実行する
   // -------------------------------------
 
-type
-  TKnownCase = record
-    formIdHex: string;
-    expectedSubstring: string;
-  end;
-
 const
-  KNOWN_CASES: array[0..1] of TKnownCase = (
-    (formIdHex: '055DF8'; expectedSubstring: 'No doubt he thought'),
-    (formIdHex: '093131'; expectedSubstring: 'With good planning')
-  );
+  // Parallel arrays (xEdit's PascalScript engine does not reliably support
+  // typed const arrays of records) — index i in one lines up with index i in the other.
+  KNOWN_FORMIDS: array[0..1] of string = ('055DF8', '093131');
+  KNOWN_EXPECTED: array[0..1] of string = ('No doubt he thought', 'With good planning');
 
 function JsonEscape(s: string): string;
 begin
@@ -135,23 +129,23 @@ var
   status, lastLine: string;
   pass: boolean;
 begin
-  AddMessage('=== TEST_MODE: checking ' + IntToStr(Length(KNOWN_CASES)) + ' known FormIDs ===');
+  AddMessage('=== TEST_MODE: checking ' + IntToStr(High(KNOWN_FORMIDS) + 1) + ' known FormIDs ===');
   outLines := TStringList.Create;
   try
-    for i := 0 to High(KNOWN_CASES) do begin
+    for i := 0 to High(KNOWN_FORMIDS) do begin
       outLines.Clear;
-      status := RunOne(skyrim, KNOWN_CASES[i].formIdHex, outLines);
+      status := RunOne(skyrim, KNOWN_FORMIDS[i], outLines);
       if status <> '' then begin
-        AddMessage('FAIL ' + KNOWN_CASES[i].formIdHex + ': ' + status);
+        AddMessage('FAIL ' + KNOWN_FORMIDS[i] + ': ' + status);
         Continue;
       end;
       lastLine := outLines.Text;
-      pass := Pos(KNOWN_CASES[i].expectedSubstring, lastLine) > 0;
+      pass := Pos(KNOWN_EXPECTED[i], lastLine) > 0;
       if pass then
-        AddMessage('PASS ' + KNOWN_CASES[i].formIdHex + ': ' + lastLine)
+        AddMessage('PASS ' + KNOWN_FORMIDS[i] + ': ' + lastLine)
       else
-        AddMessage('FAIL ' + KNOWN_CASES[i].formIdHex + ': got "' + lastLine +
-          '", expected to contain "' + KNOWN_CASES[i].expectedSubstring + '"');
+        AddMessage('FAIL ' + KNOWN_FORMIDS[i] + ': got "' + lastLine +
+          '", expected to contain "' + KNOWN_EXPECTED[i] + '"');
     end;
   finally
     outLines.Free;

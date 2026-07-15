@@ -108,14 +108,27 @@ async function main() {
   // Priority ordering. This mod is on-demand (hotkey when a subtitle can't be read),
   // so within a limited monthly budget we translate the most useful lines first.
   // Strategies (--strategy):
-  //   long  (default): substantive conversation first (longest lines first); trivial
-  //                    barks come later. Stage directions "(...)" are pushed to the end.
+  //   hard  (default): maximize the number of lines that actually need reading help.
+  //                    Lines >= HARD_MIN chars first (ascending, so as many as possible
+  //                    fit the budget), then shorter lines, stage directions "(...)" last.
+  //   long:           substantive conversation first (longest lines first); trivial
+  //                    barks come later. Stage directions pushed to the end.
   //   short:          most lines covered (shortest first), stage directions last.
   //   none:           original consolidation order.
-  const STRATEGY = arg('--strategy', 'long')
+  const STRATEGY = arg('--strategy', 'hard')
+  const HARD_MIN = Number(arg('--hard-min', 80))
   const isStageDirection = (s) => /^\s*\(.*\)\s*$/.test(s)
   let pending = [...needed.keys()]
-  if (STRATEGY === 'long') {
+  if (STRATEGY === 'hard') {
+    pending.sort((a, b) => {
+      const sa = isStageDirection(a), sb = isStageDirection(b)
+      if (sa !== sb) return sa ? 1 : -1        // stage directions last
+      const ha = a.length >= HARD_MIN, hb = b.length >= HARD_MIN
+      if (ha !== hb) return ha ? -1 : 1        // hard-to-read lines first
+      return ha ? a.length - b.length          // within hard: ascending -> max count
+                : b.length - a.length          // within easy: longer (more useful) first
+    })
+  } else if (STRATEGY === 'long') {
     pending.sort((a, b) => {
       const sa = isStageDirection(a), sb = isStageDirection(b)
       if (sa !== sb) return sa ? 1 : -1        // stage directions last

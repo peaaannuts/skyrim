@@ -105,8 +105,30 @@ async function main() {
     if (!needed.has(en)) needed.set(en, [])
     needed.get(en).push(fid)
   }
-  const pending = [...needed.keys()]
-  console.log(`${MOCK ? '[MOCK] ' : ''}unique strings to translate: ${pending.length}; budget left this run: ${budgetLeft} chars`)
+  // Priority ordering. This mod is on-demand (hotkey when a subtitle can't be read),
+  // so within a limited monthly budget we translate the most useful lines first.
+  // Strategies (--strategy):
+  //   long  (default): substantive conversation first (longest lines first); trivial
+  //                    barks come later. Stage directions "(...)" are pushed to the end.
+  //   short:          most lines covered (shortest first), stage directions last.
+  //   none:           original consolidation order.
+  const STRATEGY = arg('--strategy', 'long')
+  const isStageDirection = (s) => /^\s*\(.*\)\s*$/.test(s)
+  let pending = [...needed.keys()]
+  if (STRATEGY === 'long') {
+    pending.sort((a, b) => {
+      const sa = isStageDirection(a), sb = isStageDirection(b)
+      if (sa !== sb) return sa ? 1 : -1        // stage directions last
+      return b.length - a.length               // longest substantive dialogue first
+    })
+  } else if (STRATEGY === 'short') {
+    pending.sort((a, b) => {
+      const sa = isStageDirection(a), sb = isStageDirection(b)
+      if (sa !== sb) return sa ? 1 : -1
+      return a.length - b.length               // most lines covered
+    })
+  }
+  console.log(`${MOCK ? '[MOCK] ' : ''}strategy: ${STRATEGY}; unique strings to translate: ${pending.length}; budget left this run: ${budgetLeft} chars`)
 
   let sent = 0, translated = 0, batch = []
   const flush = async () => {

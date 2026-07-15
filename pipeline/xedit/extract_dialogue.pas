@@ -20,8 +20,7 @@ implementation
 const
   DATA_DIR = 'C:\Modding\SubtitleTranslator\data\';
   RESPONSE_TEXT_SIGNATURE = 'NAM1'; // confirmed via probe: INFO\Responses\Response\NAM1
-  TEST_MODE = True;                 // set False for a real batch run
-  BATCH_INDEX = 0;                  // when TEST_MODE=False: run for 0, then 1, then 2
+  TEST_MODE = True;                 // set False for a real batch run (processes all 3 batches)
 
 function JsonEscape(s: string): string;
 begin
@@ -178,11 +177,12 @@ end;
 function Initialize: integer;
 var
   skyrim: IInterface;
+  b: integer;
 begin
   Result := 0;
   // Version banner: if you do NOT see this line in the log, xEdit is running an
   // OLD copy. Copy this file into <xEdit install>\Edit Scripts\ and re-apply.
-  AddMessage('extract_dialogue.pas VERSION 2026-07-15d');
+  AddMessage('extract_dialogue.pas VERSION 2026-07-15e');
   skyrim := FileByName('Skyrim.esm');
   if not Assigned(skyrim) then begin
     AddMessage('ERROR: Skyrim.esm not loaded. Load only Skyrim.esm and retry.');
@@ -191,7 +191,14 @@ begin
   if TEST_MODE then
     RunTestMode(skyrim)
   else
-    RunBatch(skyrim, BATCH_INDEX);
+    // Real run: process all three batches in one apply so nothing has to be
+    // edited or re-copied between them.
+    for b := 0 to 2 do begin
+      if FileExists(DATA_DIR + 'formid_remaining_' + IntToStr(b) + '.txt') then
+        RunBatch(skyrim, b)
+      else
+        AddMessage('skip batch ' + IntToStr(b) + ': formid_remaining_' + IntToStr(b) + '.txt not found');
+    end;
 end;
 
 function Finalize: integer;

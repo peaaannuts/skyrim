@@ -35,27 +35,45 @@ Skyrim.esm ──(抽出: 実機のみ、xEdit Pascalスクリプト)──> dat
 node pipeline/consolidate.js
 ```
 
-### 2. 翻訳（translate） — **実機で・DeepL 新キーが必要**
+### 2. 翻訳（translate） — **実機で・プロバイダのキーが必要**
+
+`translate.js` は2プロバイダ対応（`--provider deepl`＝既定 / `--provider azure`）。
+**それぞれ別々の月間クォータ**を持ち、使用量も別々に記録するので、DeepLを使い切った月に
+Azureへ切り替えて残りを埋められる（既に訳済みの行はスキップされる）。
 
 `pipeline/config.local.json`（gitignore済み・コミット禁止）に**ローカルだけ**でキーを置く:
 
 ```json
-{ "deepl_api_key": "…", "deepl_endpoint": "https://api-free.deepl.com/v2/translate",
-  "deepl_api_tier": "free", "monthly_char_budget": 480000 }
+{
+  "deepl_api_key": "…",
+  "deepl_endpoint": "https://api-free.deepl.com/v2/translate",
+  "monthly_char_budget": 500000,
+
+  "azure_api_key": "…",
+  "azure_region": "japaneast",
+  "azure_endpoint": "https://api.cognitive.microsofttranslator.com"
+}
 ```
 
 ```bash
-# その月の残り予算いっぱいまで翻訳（中断してもOK、再実行で続きから）
+# DeepL（既定）でその月の残り予算まで
 node pipeline/translate.js
 
+# Azure（無料F0＝月200万字）で残りを一気に。中断してもOK、再実行で続きから
+node pipeline/translate.js --provider azure
+
 # 動作確認だけ（ネットにもキーにも触れない。JA = "【JA】<en>"）
-DEEPL_MOCK=1 node pipeline/translate.js --limit 5000
+MOCK=1 node pipeline/translate.js --provider azure --limit 5000
 ```
 
-- **中断再開**: `data/translate_progress.json`（gitignore済み）に月次使用文字数と翻訳キャッシュを保存。
-  クラッシュしても失うのは最大1バッチ分。
-- **予算キャップ**: `monthly_char_budget` を超えて送らない。月が変わると自動リセット。
-  DeepL が HTTP 456（quota exceeded）を返したら安全に停止。
+**Azure 無料キーの取り方（初回のみ）:** Azureアカウント作成（無料） → ポータルで
+「Translator」リソースを作成（価格レベル **F0＝無料/月200万字**）→ 「キーとエンドポイント」から
+`Key 1` と `Location/Region`（例 `japaneast`）を取得 → 上記 `azure_api_key` / `azure_region` に設定。
+
+- **中断再開**: `data/translate_progress.json`（gitignore済み）に `used:{deepl,azure}` と翻訳キャッシュを保存。
+  クラッシュしても失うのは最大1バッチ分。旧形式（`charsUsedThisMonth`）は自動でDeepL使用量へ移行。
+- **予算キャップ**: プロバイダ別に上限（DeepL 既定48万〜設定値、Azure 既定190万）を超えて送らない。
+  月が変わると自動リセット。DeepL 456 / Azure 403（quota exceeded）を受けたら安全に停止。
 - **重複排除**: 同一英文は1回だけ課金対象として送り、全FormIDへ結果を展開。
 - **シード保護**: 手動翻訳済みの4行など、既に `translations.json` にあるキーは上書きしない。
 

@@ -35,13 +35,13 @@ function ensureOverlay(): void {
       d.id = 'jp-subtitle-overlay';
       d.style.position = 'fixed';
       d.style.left = '50%';
-      d.style.bottom = '14%';
+      d.style.bottom = '20%';
       d.style.transform = 'translateX(-50%)';
       d.style.maxWidth = '72%';
       d.style.textAlign = 'center';
       d.style.fontFamily = 'sans-serif';
-      d.style.fontSize = '30px';
-      d.style.lineHeight = '1.35';
+      d.style.fontSize = '24px';
+      d.style.lineHeight = '1.3';
       d.style.color = '#ffe9c8';
       d.style.textShadow = '0 0 4px #000, 0 0 8px #000, 0 2px 4px #000';
       d.style.pointerEvents = 'none';

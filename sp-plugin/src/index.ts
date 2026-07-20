@@ -1,18 +1,27 @@
 import { callNative, on, Input, browser, writeLogs } from 'skyrimPlatform'
 import translations from './translations.json'
 
-// FormID (6 hex, uppercase, e.g. "055DF8") -> Japanese text. Bundled at build time.
-// Component A will later replace translations.json with the full DeepL-generated table.
+// Key "<Plugin>|<FORMID6>" (e.g. "Skyrim.esm|055DF8") -> Japanese text. Bundled at
+// build time. The plugin qualifier prevents DLC lines from colliding with Skyrim.esm
+// lines that share the same low-24-bit FormID.
 const table: Record<string, string> = translations as Record<string, string>
 
 function log(msg: string): void {
   writeLogs('jp-subtitle', msg)
 }
 
-// The native plugin returns the INFO FormID as a signed Int; read it unsigned and
-// take the low 6 hex digits (plugin load-index 00 for vanilla Skyrim.esm).
+// The native plugin currently returns the INFO FormID as a signed Int; read it
+// unsigned and take the low 6 hex digits. Skyrim.esm is load-index 00, so this is a
+// Skyrim.esm-local FormID. NOTE: this cannot see which plugin the line came from, so
+// DLC lookups are not yet possible from here — that needs the native side to return
+// the plugin name too (planned: GetCurrentDialogueKey returning "<Plugin>|<FORMID6>").
 function formIdKey(raw: number): string {
   return ((raw >>> 0) & 0xffffff).toString(16).padStart(6, '0').toUpperCase()
+}
+
+// Build the lookup key for a raw FormID from the (Skyrim.esm-only) native call.
+function skyrimKey(raw: number): string {
+  return 'Skyrim.esm|' + formIdKey(raw)
 }
 
 // Escape a string for safe embedding inside the JS source we hand to the CEF browser.
@@ -89,14 +98,14 @@ function translateCurrent(): void {
     return
   }
 
-  const key = formIdKey(raw)
+  const key = skyrimKey(raw)
   const jp = table[key]
   if (jp) {
     log(`hit ${key} -> ${jp}`)
     showOverlay(jp)
   } else {
     log(`miss ${key} (no translation yet)`)
-    showOverlay(`<span style="color:#ffb0b0">［FormID ${key} の訳は未登録］</span>`)
+    showOverlay(`<span style="color:#ffb0b0">［${key} の訳は未登録］</span>`)
   }
 }
 

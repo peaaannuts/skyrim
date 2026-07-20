@@ -1,22 +1,28 @@
 # pipeline/ — Component A: FormID → 日本語 ルックアップテーブル生成
 
 ビルド時に一度だけ回すオフライン処理。MOD本体には含まれない。
-成果物は `sp-plugin/src/translations.json`（`FORMID6 → 日本語`）で、これを webpack が
-`jp-subtitle.js` にバンドルする。
+成果物は `sp-plugin/src/translations.json`（`<Plugin>|<FORMID6> → 日本語`）で、これを
+webpack が `jp-subtitle.js` にバンドルする。
+
+**キー形式（重要）：** `<プラグイン名>|<ローカルFormID6>`（例 `Skyrim.esm|055DF8`,
+`Dawnguard.esm|001A2B`）。プラグイン名を付けることで、DLCの台詞が Skyrim.esm の
+下位24bit同値FormIDと衝突して誤訳を出すのを防ぐ。TS(`index.ts`) とC++(将来 native関数が
+`<Plugin>|<FORMID6>` を返す) も同じキーで一致させる。
 
 ## データフロー
 
 ```
-Skyrim.esm ──(抽出: 実機のみ、xEdit Pascalスクリプト)──> data/raw_dialogue*.json,
-                                                          chunks_c/*.json, extracted_*.jsonl
-                                         │
+Skyrim.esm + DLC ─(抽出: 実機のみ, xEdit)→ data/raw_dialogue*.json, chunks_c/*.json,
+   Skyrim.esm本体            extract_dialogue.pas → extracted_0/1/2.jsonl
+   Dawnguard/HearthFires/    extract_dlc.pas      → extracted_dlc_<Plugin>.jsonl
+   Dragonborn                        │
                         node pipeline/consolidate.js   （鍵不要・どこでも可）
-                                         ▼
-                              data/dialogue_en.json   { "FORMID6": "english" }
-                                         │
-                        node pipeline/translate.js     （実機の DeepL 新キーが必要）
-                                         ▼
-                        sp-plugin/src/translations.json  { "FORMID6": "日本語" }
+                                     ▼
+                    data/dialogue_en.json   { "<Plugin>|<FORMID6>": "english" }
+                                     │
+                        node pipeline/translate.js     （実機のAPIキーが必要）
+                                     ▼
+             sp-plugin/src/translations.json  { "<Plugin>|<FORMID6>": "日本語" }
 ```
 
 ## 現状の数字（2026-07-14 実測）

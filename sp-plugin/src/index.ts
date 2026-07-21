@@ -10,20 +10,6 @@ function log(msg: string): void {
   writeLogs('jp-subtitle', msg)
 }
 
-// The native plugin currently returns the INFO FormID as a signed Int; read it
-// unsigned and take the low 6 hex digits. Skyrim.esm is load-index 00, so this is a
-// Skyrim.esm-local FormID. NOTE: this cannot see which plugin the line came from, so
-// DLC lookups are not yet possible from here — that needs the native side to return
-// the plugin name too (planned: GetCurrentDialogueKey returning "<Plugin>|<FORMID6>").
-function formIdKey(raw: number): string {
-  return ((raw >>> 0) & 0xffffff).toString(16).padStart(6, '0').toUpperCase()
-}
-
-// Build the lookup key for a raw FormID from the (Skyrim.esm-only) native call.
-function skyrimKey(raw: number): string {
-  return 'Skyrim.esm|' + formIdKey(raw)
-}
-
 // Escape a string for safe embedding inside the JS source we hand to the CEF browser.
 function esc(s: string): string {
   return s
@@ -84,21 +70,20 @@ function hideOverlay(): void {
 }
 
 function translateCurrent(): void {
-  let raw = 0
+  let key = ''
   try {
-    raw = callNative('JpSubtitle', 'GetCurrentDialogueFormID', undefined) as number
+    key = callNative('JpSubtitle', 'GetCurrentDialogueKey', undefined) as string
   } catch (e) {
     log(`callNative failed: ${e}`)
     return
   }
 
-  if (!raw) {
-    log('no current dialogue FormID (0)')
+  if (!key) {
+    log('no current dialogue key (empty)')
     showOverlay('<span style="color:#aaa">（今表示中の字幕はありません）</span>')
     return
   }
 
-  const key = skyrimKey(raw)
   const jp = table[key]
   if (jp) {
     log(`hit ${key} -> ${jp}`)

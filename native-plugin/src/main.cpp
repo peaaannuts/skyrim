@@ -68,19 +68,25 @@ namespace
 		return 0x12345;
 	}
 
-	// The real getter the TS layer calls on hotkey: identify the currently-displayed
-	// subtitle, take its speaker, and return that speaker's active TopicInfo FormID
-	// (0 = nothing translatable right now). Returned as Int; the TS side reads it
-	// unsigned. The FormID keys the offline JP lookup table.
-	std::int32_t GetCurrentDialogueFormID(RE::StaticFunctionTag*)
+	struct ActiveDialogue
 	{
+		std::uint32_t speaker = 0;
+		std::uint32_t topicInfo = 0;
+		std::string text;
+	};
+
+	// Identify the currently-displayed subtitle's speaker, then that speaker's active
+	// (BEGIN seen, END not yet) TopicInfo FormID. speaker==0 means nothing is
+	// displayed; topicInfo==0 means a speaker is displayed but has no active line
+	// recorded (shouldn't normally happen once the sink has seen its BEGIN).
+	ActiveDialogue ResolveActiveDialogue()
+	{
+		ActiveDialogue result;
 		auto* mgr = RE::SubtitleManager::GetSingleton();
 		if (!mgr) {
-			return 0;
+			return result;
 		}
 
-		std::uint32_t chosenSpeaker = 0;
-		std::string chosenText;
 		{
 			RE::BSSpinLockGuard guard(mgr->lock);
 			const auto count = mgr->subtitles.size();
@@ -97,39 +103,74 @@ namespace
 				// Conversation dialogue is forceDisplay=true - prefer it. Otherwise
 				// remember the first non-empty line as a fallback.
 				if (info.forceDisplay) {
-					chosenSpeaker = sp->GetFormID();
-					chosenText = text;
+					result.speaker = sp->GetFormID();
+					result.text = text;
 					break;
 				}
-				if (chosenSpeaker == 0) {
-					chosenSpeaker = sp->GetFormID();
-					chosenText = text;
+				if (result.speaker == 0) {
+					result.speaker = sp->GetFormID();
+					result.text = text;
 				}
 			}
 		}
 
-		if (chosenSpeaker == 0) {
+		if (result.speaker == 0) {
+			return result;
+		}
+
+		std::lock_guard<std::mutex> lk(g_activeMutex);
+		auto it = g_activeBySpeaker.find(result.speaker);
+		if (it != g_activeBySpeaker.end()) {
+			result.topicInfo = it->second;
+		}
+		return result;
+	}
+
+	// Resolve the plugin (mod file) that defines the given FormID, e.g. "Skyrim.esm"
+	// or "Dawnguard.esm". Empty if the form or its origin file can't be found.
+	std::string PluginNameFor(std::uint32_t a_formID)
+	{
+		auto* form = RE::TESForm::LookupByID(a_formID);
+		if (!form) {
+			return {};
+		}
+		auto* file = form->GetFile(0);
+		return file ? std::string(file->GetFilename()) : std::string{};
+	}
+
+	// The real getter the TS layer calls on hotkey: "<Plugin>|<FORMID6>" for the
+	// INFO record behind the currently-displayed subtitle line (e.g.
+	// "Skyrim.esm|055DF8", "Dawnguard.esm|001A2B"), or "" if nothing translatable
+	// is on screen right now. The plugin qualifier keeps DLC lines from colliding
+	// with Skyrim.esm lines that share the same low-24-bit FormID.
+	RE::BSFixedString GetCurrentDialogueKey(RE::StaticFunctionTag*)
+	{
+		const auto dlg = ResolveActiveDialogue();
+		if (dlg.speaker == 0) {
 			logs::info("[QUERY] no displayed subtitle");
-			return 0;
+			return RE::BSFixedString{};
+		}
+		if (dlg.topicInfo == 0) {
+			logs::info("[QUERY] speaker={:08X} topicInfo=none text=\"{}\"", dlg.speaker, dlg.text);
+			return RE::BSFixedString{};
 		}
 
-		std::uint32_t topicInfo = 0;
-		{
-			std::lock_guard<std::mutex> lk(g_activeMutex);
-			auto it = g_activeBySpeaker.find(chosenSpeaker);
-			if (it != g_activeBySpeaker.end()) {
-				topicInfo = it->second;
-			}
+		const std::string plugin = PluginNameFor(dlg.topicInfo);
+		if (plugin.empty()) {
+			logs::warn("[QUERY] topicInfo={:08X} has no owning plugin file", dlg.topicInfo);
+			return RE::BSFixedString{};
 		}
 
-		logs::info("[QUERY] speaker={:08X} topicInfo={:08X} text=\"{}\"", chosenSpeaker, topicInfo, chosenText);
-		return static_cast<std::int32_t>(topicInfo);
+		const std::string key = fmt::format("{}|{:06X}", plugin, dlg.topicInfo & 0xFFFFFF);
+		logs::info("[QUERY] speaker={:08X} topicInfo={:08X} key={} text=\"{}\"",
+			dlg.speaker, dlg.topicInfo, key, dlg.text);
+		return RE::BSFixedString(key.c_str());
 	}
 
 	bool RegisterPapyrus(RE::BSScript::IVirtualMachine* a_vm)
 	{
 		a_vm->RegisterFunction("GetTestValue", PapyrusClass, GetTestValue);
-		a_vm->RegisterFunction("GetCurrentDialogueFormID", PapyrusClass, GetCurrentDialogueFormID);
+		a_vm->RegisterFunction("GetCurrentDialogueKey", PapyrusClass, GetCurrentDialogueKey);
 		logs::info("Papyrus functions registered");
 		return true;
 	}

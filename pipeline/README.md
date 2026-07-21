@@ -6,8 +6,9 @@ webpack が `jp-subtitle.js` にバンドルする。
 
 **キー形式（重要）：** `<プラグイン名>|<ローカルFormID6>`（例 `Skyrim.esm|055DF8`,
 `Dawnguard.esm|001A2B`）。プラグイン名を付けることで、DLCの台詞が Skyrim.esm の
-下位24bit同値FormIDと衝突して誤訳を出すのを防ぐ。TS(`index.ts`) とC++(将来 native関数が
-`<Plugin>|<FORMID6>` を返す) も同じキーで一致させる。
+下位24bit同値FormIDと衝突して誤訳を出すのを防ぐ。TS(`index.ts`) は `GetCurrentDialogueKey`
+native関数（C++実装済み・`native-plugin/src/main.cpp`）が返す同じキーでルックアップする
+（**2026-07-21時点で実機ビルド・in-game未検証**、詳細はCLAUDE.mdのDLC対応セクション参照）。
 
 ## データフロー
 

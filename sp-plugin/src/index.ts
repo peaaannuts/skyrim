@@ -70,17 +70,25 @@ function hideOverlay(): void {
 }
 
 function translateCurrent(): void {
-  let key = ''
+  // DIAGNOSTIC MODE (2026-07-23): show exactly what callNative returns, on screen,
+  // so we no longer depend on aligning the (append-only) TS log with the (truncated)
+  // C++ log. Once the bridge is confirmed, revert to the clean version below.
+  let ret: unknown
   try {
-    key = callNative('JpSubtitle', 'GetCurrentDialogueKey', undefined) as string
+    ret = callNative('JpSubtitle', 'GetCurrentDialogueKey', undefined)
   } catch (e) {
-    log(`callNative failed: ${e}`)
+    log(`callNative threw: ${e}`)
+    showOverlay(`<span style="color:#ff8080">callNative ERROR: ${esc(String(e))}</span>`)
     return
   }
 
+  const rawDesc = `${JSON.stringify(ret)} (type ${typeof ret})`
+  log(`callNative returned ${rawDesc}`)
+
+  const key = ret as string
   if (!key) {
-    log('no current dialogue key (empty)')
-    showOverlay('<span style="color:#aaa">（今表示中の字幕はありません）</span>')
+    // Show the raw return so we can tell "" from undefined/null on screen.
+    showOverlay(`<span style="color:#ffd080">returned ${esc(rawDesc)}</span>`)
     return
   }
 
@@ -90,7 +98,7 @@ function translateCurrent(): void {
     showOverlay(jp)
   } else {
     log(`miss ${key} (no translation yet)`)
-    showOverlay(`<span style="color:#ffb0b0">［${key} の訳は未登録］</span>`)
+    showOverlay(`<span style="color:#ffb0b0">［${key} 未登録］</span>`)
   }
 }
 

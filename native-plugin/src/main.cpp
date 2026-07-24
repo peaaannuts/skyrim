@@ -143,22 +143,29 @@ namespace
 	// "Skyrim.esm|055DF8", "Dawnguard.esm|001A2B"), or "" if nothing translatable
 	// is on screen right now. The plugin qualifier keeps DLC lines from colliding
 	// with Skyrim.esm lines that share the same low-24-bit FormID.
+	//
+	// DIAGNOSTIC MODE (2026-07-24): the SKSE log file has not been reliably capturing
+	// [QUERY] lines in this troubleshooting session (unclear whether it's flush
+	// timing or a stale-file read), so instead of ever returning an empty string,
+	// every early-return path returns a distinct, readable placeholder. The TS
+	// overlay already shows unknown keys as "<key> 未登録" in red, so this surfaces
+	// directly on screen with no log-file dependency. Revert once confirmed.
 	RE::BSFixedString GetCurrentDialogueKey(RE::StaticFunctionTag*)
 	{
 		const auto dlg = ResolveActiveDialogue();
 		if (dlg.speaker == 0) {
 			logs::info("[QUERY] no displayed subtitle");
-			return RE::BSFixedString{};
+			return RE::BSFixedString("DIAG_NO_SUBTITLE");
 		}
 		if (dlg.topicInfo == 0) {
 			logs::info("[QUERY] speaker={:08X} topicInfo=none text=\"{}\"", dlg.speaker, dlg.text);
-			return RE::BSFixedString{};
+			return RE::BSFixedString(fmt::format("DIAG_NO_TOPICINFO_speaker{:08X}", dlg.speaker).c_str());
 		}
 
 		const std::string plugin = PluginNameFor(dlg.topicInfo);
 		if (plugin.empty()) {
 			logs::warn("[QUERY] topicInfo={:08X} has no owning plugin file", dlg.topicInfo);
-			return RE::BSFixedString{};
+			return RE::BSFixedString(fmt::format("DIAG_NO_PLUGIN_topicInfo{:08X}", dlg.topicInfo).c_str());
 		}
 
 		const std::string key = fmt::format("{}|{:06X}", plugin, dlg.topicInfo & 0xFFFFFF);

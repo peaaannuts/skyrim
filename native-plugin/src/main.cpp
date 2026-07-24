@@ -1,11 +1,24 @@
 #include "pch.h"
 
+#include <iomanip>
 #include <mutex>
+#include <sstream>
 #include <string>
 #include <unordered_map>
 
 namespace
 {
+	// Uppercase hex, zero-padded to a_width digits. No fmt dependency - this project's
+	// include paths don't expose the `fmt` namespace to consumers (only SKSE::log's own
+	// internal formatting uses it), confirmed by a from-scratch build failing with
+	// "'fmt': identifier is not a class or namespace name" (2026-07-24).
+	std::string HexUpper(std::uint32_t a_value, int a_width)
+	{
+		std::ostringstream ss;
+		ss << std::hex << std::uppercase << std::setfill('0') << std::setw(a_width) << a_value;
+		return ss.str();
+	}
+
 	// speaker FormID -> currently-active (BEGIN seen, END not yet) TopicInfo FormID.
 	// Phase 1b established: a genuinely-spoken line keeps its TopicInfo active for the
 	// whole playback (BEGIN..END seconds apart), while background scene-evaluation noise
@@ -159,16 +172,16 @@ namespace
 		}
 		if (dlg.topicInfo == 0) {
 			logs::info("[QUERY] speaker={:08X} topicInfo=none text=\"{}\"", dlg.speaker, dlg.text);
-			return RE::BSFixedString(fmt::format("DIAG_NO_TOPICINFO_speaker{:08X}", dlg.speaker).c_str());
+			return RE::BSFixedString(("DIAG_NO_TOPICINFO_speaker" + HexUpper(dlg.speaker, 8)).c_str());
 		}
 
 		const std::string plugin = PluginNameFor(dlg.topicInfo);
 		if (plugin.empty()) {
 			logs::warn("[QUERY] topicInfo={:08X} has no owning plugin file", dlg.topicInfo);
-			return RE::BSFixedString(fmt::format("DIAG_NO_PLUGIN_topicInfo{:08X}", dlg.topicInfo).c_str());
+			return RE::BSFixedString(("DIAG_NO_PLUGIN_topicInfo" + HexUpper(dlg.topicInfo, 8)).c_str());
 		}
 
-		const std::string key = fmt::format("{}|{:06X}", plugin, dlg.topicInfo & 0xFFFFFF);
+		const std::string key = plugin + "|" + HexUpper(dlg.topicInfo & 0xFFFFFF, 6);
 		logs::info("[QUERY] speaker={:08X} topicInfo={:08X} key={} text=\"{}\"",
 			dlg.speaker, dlg.topicInfo, key, dlg.text);
 		return RE::BSFixedString(key.c_str());

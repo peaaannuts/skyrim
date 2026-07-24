@@ -1,0 +1,708 @@
+{"formId":"0A9B43:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hi there."}
+{"formId":"017EAA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Did you see that?"}
+{"formId":"017EAB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh my goodness!"}
+{"formId":"017EAC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Whoa! They killed Grelod! Ha ha ha ha ha!"}
+{"formId":"017EAE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yeah! Get her! Kill her!"}
+{"formId":"08EC3B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Magic? That's dangerous. You want to learn that, go to that College in Winterhold. They teach that stuff there."}
+{"formId":"08EC3B:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Hey! I know. The Jarl's wizard could teach ya. He's lots closer."}
+{"formId":"050DAD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Goodbye, assassin."}
+{"formId":"021271:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Are you a soldier? One day, I'm going to be a soldier!"}
+{"formId":"021272:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pa says I'm too young to fight in the war, but I can still help by patrolling the town."}
+{"formId":"021273:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I wish I was a soldier! They get to travel and stay up late and have fun!"}
+{"formId":"021274:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Have you met Lucky? He's my pet goat, and he helps me patrol the town."}
+{"formId":"0479F5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's a wonderful house, my love. If you don't mind, I'm going to start a small store. Something to do whenever you're on the road."}
+{"formId":"0CCD5A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You have quite a house. I'm thinking of setting up a small store here. Sell odds and ends."}
+{"formId":"0CCD5B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Strange house, but strong. Solid. I think I'll open a store. A task to tend to whenever you're away."}
+{"formId":"0CCD5C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This house of yours is wondrous, at least to these eyes. I've thought about starting a store. Something to do here when you're out."}
+{"formId":"0CCD5D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This house is huge. I'll be tripping my feet all over this place. Hey, I think I'll start a little business here. Something to do, you know?"}
+{"formId":"0CCD5E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I've seen bigger houses, but it's yours, so I like it. Now, I think I need something to do if you're ever away, so I'll be opening a store."}
+{"formId":"0CCD5F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A good house. You chose well. I don't like sitting still, so I've decided to open a store. Buy and sell whatever is needed."}
+{"formId":"02C6D6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Assur had to move away because of the Empire. But we get to stay."}
+{"formId":"0E0CFE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The mages don't let us go in the College. They said it's not safe in there."}
+{"formId":"02C6D7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Assur says his pa says the College made lots of bad things happen, but the mages I've seen look nice."}
+{"formId":"02C6D5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Assur and I are playing a game. Don't tell him where I am!"}
+{"formId":"02C6D8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There's not many people left in Winterhold, so I only have Assur to play with, and sometimes he's mean."}
+{"formId":"02C6D9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Assur always wants to play \"Hunt the Elf\" and he makes me be the Elf."}
+{"formId":"0DE50E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, Thane. What is it?"}
+{"formId":"015D11:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you command."}
+{"formId":"02A7C8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What're you lookin' at? I'm not afraid of you, ya know. Even if you are my elder."}
+{"formId":"02A7C9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Boys, girls, dogs, elders - there's nobody I won't fight!"}
+{"formId":"0934F7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I don't fight Lars no more, if that's what you're worried about."}
+{"formId":"02A7CA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Stupid Lars Battle-Born. I fight him almost every day, but it's not much of a fight, 'cause he don't fight back."}
+{"formId":"0CD60E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We're united, but where should we live? My home is yours, of course."}
+{"formId":"0CD60F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm a married man! Hey, where should we live? I guess you could always stay with me."}
+{"formId":"0CD611:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Married. It doesn't feel like I thought it would, but I'm happy. Where should we live? You could stay with me...."}
+{"formId":"003E62:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This is the happiest day of my life. Where should we live? My home is your home now, of course."}
+{"formId":"02E11A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We're married. I guess we'll need to decide where we're living, won't we? You can always stay with me."}
+{"formId":"0CD60C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I guess we have our entire lives together, now. Where should we live? You could stay with me...."}
+{"formId":"003E5F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We face the world together now. Where should we live? My home is yours."}
+{"formId":"0B2FCF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey! Wanna play tag?"}
+{"formId":"0B2D88:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hiya! What's your name? Are you visiting? What do you do?"}
+{"formId":"02E176:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa says I won't see Roggvir any more, but he wouldn't tell me why not."}
+{"formId":"02F7E8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My papa says I'm greg-gare-ree-yus, just like him! He says it means \"smart,\" but my brother says he's wrong."}
+{"formId":"0C1D48:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa used to say I was greg-gare-ree-yus, just like him. I miss him..."}
+{"formId":"02F7ED:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I... I don't want to talk."}
+{"formId":"02E17A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I don't have anything to say."}
+{"formId":"02E179:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pardon me."}
+{"formId":"0C0FB0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mother says I shouldn't talk to people..."}
+{"formId":"0302ED:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're a guest. And father says we have to be polite to guests."}
+{"formId":"02E1A9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama said I could help with the goats!"}
+{"formId":"0302EE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Father says I don't have the knack for reading, but mama says I won't need it to work the farm."}
+{"formId":"02E49F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This is the Old Hroldan Inn. Clean beds and strong drink."}
+{"formId":"02E4A0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My mother's dead, but I won't close the inn. I've hired Leontius to run things."}
+{"formId":"02E4A1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"If you drink too much, you're out. No drunks."}
+{"formId":"02E4A2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Changed the linens myself. They're fresh."}
+{"formId":"02EC49:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Why is everyone so upset? If there's Forsworn, the Jarl will take care of them, right?"}
+{"formId":"06625F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hope Pavo will be able to go back to his mine soon. Everyone needs a home."}
+{"formId":"066260:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What'cha doing in Left Hand? Do you dig up rocks too, like my mom?"}
+{"formId":"02EC4A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Why do they call it Left Hand Mine? Can the miners use their right hands too?"}
+{"formId":"02EC4B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Have you met Torom? He's the best dog in the Reach."}
+{"formId":"0300F5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hi! I've never seen you around here before. Are you a miner too?"}
+{"formId":"0300F6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sondas takes care of me when mom's not around."}
+{"formId":"035042:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Derkeethus used to take me diving way down deep in the river. I miss him."}
+{"formId":"0300F8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mom says the Empire is mean, but I don't think they're that bad."}
+{"formId":"0300F9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The Stormcloaks are named after Ulfric. He's a bad man, but don't tell the soldiers that."}
+{"formId":"06BBA6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I can't believe my mother's gone. Now what'll I do?"}
+{"formId":"0E3E8E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I knew it! I knew my father was a hero and he didn't just run away."}
+{"formId":"0302A9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's just me and my mother at the mill here. My father is gone. We don't know what happened to him."}
+{"formId":"0302A8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I hope you're not here to start some trouble. I'll fight you if I have to."}
+{"formId":"0302AA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My mother taught me the millwork trade... you know, which trees to cut and which ones to pass up."}
+{"formId":"0E3E8F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Someday I'll take over the mill... when I'm old enough."}
+{"formId":"0302AB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm not afraid of anyone. Put a sword in my hand and I could defend this place if I had to!"}
+{"formId":"0302AC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Millwork sure is boring, but at least I don't have to work in a nasty mine."}
+{"formId":"038735:HearthFires.esm","responseIndex":0,"editorId":null,"text":"If you beat up my sister Sissel, I won't tell."}
+{"formId":"0653FA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Are you new around here? You should go to the inn if you need a place to stay."}
+{"formId":"0653FD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sissel thinks she's so special. No way she's more special than me."}
+{"formId":"038736:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm the older sister, by nearly five minutes. Sissel's barely worthy to walk in my shadow."}
+{"formId":"038739:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I wish I could be an adventurer like you, and go wherever I want."}
+{"formId":"06541A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I had a dream that there was a good dragon. He was old and gray, but he wasn't scary."}
+{"formId":"065494:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Most days, I do all I can to stay away from my sister and my father. The beating's the same from either one."}
+{"formId":"03873A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Some day soon I'll stop being afraid. Jouane is teaching me magic. He says I'm real good."}
+{"formId":"094D80:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There's a new museum opening up in Dawnstar. The owner is asking me to hand out invitations to travelers."}
+{"formId":"003DE5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Here's a letter from the Jarl's steward. Looks like official business."}
+{"formId":"003DE6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There's a new lady in charge of the Orphanage in Riften. She asked me to hand out these notices to everyone I met."}
+{"formId":"01770F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, a letter from the Jarl! Moving up in the world, eh?"}
+{"formId":"08BBCE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Please, mister. You got to get me out of here. Ever since Aventus left, Grelod's been even meaner than usual. I swear, she's going to kill one of us."}
+{"formId":"08BBCF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Please, lady. You got to get me out of here. Ever since Aventus left, Grelod's been even meaner than usual. I swear, she's going to kill one of us."}
+{"formId":"08BBD0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I used to hate it here, but it's not so bad anymore. Constance is real good to us."}
+{"formId":"08BBD1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's too bad the orphanage ain't letting us kids get adopted. I'd be the best son ever."}
+{"formId":"08BBD2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I was named after the sound a lion makes. You know: rrroooaaaarr! Really."}
+{"formId":"08BBD3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I can't believe it! Grelod is dead! She's really dead!"}
+{"formId":"0D0598:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I do hope mummy and father come to get me soon. Ever since that Aventus boy left, Grelod has been so angry."}
+{"formId":"016CA2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I do hope mummy and father come to get me soon. Ever since that Aventus boy left, this place has gone mad."}
+{"formId":"08BBD4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My parents dropped me off here a year ago. But they're coming back to get me. They said so."}
+{"formId":"08BBD5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You look kind of scary. But nobody is scarier than old Grelod."}
+{"formId":"08BBD6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Constance Michel says we have to be careful of people we don't know."}
+{"formId":"08BBD7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm really afraid of Grelod. When Aventus escaped, she was so mad. I got double the beatings that day."}
+{"formId":"08BBD9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Kill one person, and you can solve so many problems. I wonder at the possibilities."}
+{"formId":"016CA3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"When Aventus escaped, Grelod was so mad. I got double the beatings that day. But that won't happen ever again."}
+{"formId":"08BBD8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I hate it here. Grelod the Kind is the meanest person in all of Skyrim."}
+{"formId":"0D0599:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Things are much better now that Grelod is dead, but still. I'm sick of this place."}
+{"formId":"08BBDA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm strong, and quick, and can do any chore you want. Come on, adopt me. Please?"}
+{"formId":"016CA4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"When Aventus took off, when he said those things, about killing Grelod... I never imagined he was serious..."}
+{"formId":"08BBDB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Come to get yourself a kid? You're out of luck. No way Grelod will let any of us get adopted. Especially not since Aventus took off."}
+{"formId":"08BBE0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Grelod ain't going to like some stranger just hangin' around. Not that I care."}
+{"formId":"08BBDD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Constance don't care much for strangers in the orphanage. Afraid someone might hurt one of us kids. Which, I gotta admit, is kind of nice."}
+{"formId":"08BBDE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Why's someone like you want to hang around a place like this?"}
+{"formId":"0A402C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Grelod... murdered. Here. I... I need... air... You... you... Get out of here! Get out!"}
+{"formId":"0D059A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I can't believe Grelod is dead. I had no love for the woman, but to be murdered, in cold blood..."}
+{"formId":"0A402D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You really shouldn't be in here."}
+{"formId":"0A402E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm sorry, but the children aren't up for adoption right now. You should go."}
+{"formId":"0A402F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My only concern is for the children. The poor darlings have no one else."}
+{"formId":"0DA661:HearthFires.esm","responseIndex":0,"editorId":null,"text":"By the gods, a dragon's been sighted just south of the city, flying around Lost Tongue Overlook."}
+{"formId":"0042C1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You came to visit! It's so much better here with Grelod gone. Thanks to you."}
+{"formId":"04542A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're new around here, so I'll go easy on ya. But don't get on my bad side."}
+{"formId":"04542B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Get me mad, and I'll prank ya. And not a little. A lot."}
+{"formId":"04542C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, everybody around here's so serious."}
+{"formId":"0458BA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"So I like to have a little fun, so what?"}
+{"formId":"04542D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My friend Dorthe doesn't like my pranking. \"You're being mean, Frodnar!\" So what if I am?"}
+{"formId":"04542E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mother wants me to work at the mill. But I ain't nobody's slave."}
+{"formId":"04542F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You gotta have better things to do than talk to me all day..."}
+{"formId":"045473:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa says I'm too friendly with strangers, but you seem all right."}
+{"formId":"045474:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My father is Alvor, the blacksmith. I'm his assistant. I mean, apprentice."}
+{"formId":"045475:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Some day I'm going to forge my own sword!"}
+{"formId":"045476:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa says I'm not ready for weapons. So I make lots of horseshoes and hobnails."}
+{"formId":"045477:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama doesn't think I'm girlish enough. But that's just stupid girl talk."}
+{"formId":"045478:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa may have wanted a son, but he got me. He's a lucky man."}
+{"formId":"045479:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ain't nothin' a boy can do that I can't do better."}
+{"formId":"01612D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh. For some reason I didn't realize you were the same person all the stories were about..."}
+{"formId":"01612D:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Well, in any case, you still need to kill those bandits, remember? Then we can discuss you buying property in Falkreath."}
+{"formId":"01612E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, it's you. Yes, well, now we'll see if the stories about you are true."}
+{"formId":"01612E:HearthFires.esm","responseIndex":1,"editorId":null,"text":"There's a group of bandits in my Hold that I... may have had a few discreet dealings with."}
+{"formId":"01612E:HearthFires.esm","responseIndex":2,"editorId":null,"text":"The cut they were giving me was good at first, but now it's time to clean things up. Go and take care of it."}
+{"formId":"01612F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There's that group of bandits that need to be taught a lesson, remember?"}
+{"formId":"01612F:HearthFires.esm","responseIndex":1,"editorId":null,"text":"The cut they were giving me was good at first, but now it's time to clean things up. Go and take care of it."}
+{"formId":"090DF7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You've proven reliable. There's a group of bandits in my Hold that I... may have had a few discreet dealings with."}
+{"formId":"090DF7:HearthFires.esm","responseIndex":1,"editorId":null,"text":"The cut they were giving me was good at first, but now it's time to clean things up. Go and take care of it."}
+{"formId":"04BCEF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I know all the good spots! You don't stand a chance!"}
+{"formId":"04BCEF:HearthFires.esm","responseIndex":1,"editorId":null,"text":"You stand right there and count to 10. No peeking. Ready? Okay go!"}
+{"formId":"04BCEC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Figures. You elders are always so boring."}
+{"formId":"04BCEB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey. You wanna play a game?"}
+{"formId":"05C826:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I will be back at your house if you need me, Thane."}
+{"formId":"015D53:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll keep watch at Lakeview Manor until you return, Thane. Good hunting."}
+{"formId":"015D54:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll return to Windstad Manor and remain on guard, my Thane."}
+{"formId":"015D55:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you command, Thane. I'll guard Heljarchen House until you return."}
+{"formId":"015D56:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll wait for you at the Jarl's Longhouse in Falkreath until you need me again, Thane."}
+{"formId":"015D57:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll return to Highmoon Hall in Morthal until you need me again, Thane."}
+{"formId":"015D58:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you command, Thane. I'll wait at the White Hall in Dawnstar until you need me again."}
+{"formId":"02CCC5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(bark)"}
+{"formId":"015D4E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course, Thane. How can I be of service?"}
+{"formId":"015D4F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Do you need something from me, Thane? Or can I carry something for you?"}
+{"formId":"015D50:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What's mine is yours, Thane."}
+{"formId":"060023:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I am sworn to carry your burdens."}
+{"formId":"015D51:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I am at your command."}
+{"formId":"015D52:HearthFires.esm","responseIndex":0,"editorId":null,"text":"How can I serve you, my Thane?"}
+{"formId":"0649A9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Don't have to tell me twice. But then, I'm not the one that buried iron under these mountains."}
+{"formId":"090DF8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Teach them to stop paying me."}
+{"formId":"090DF8:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Here. You deserve a reward for your service."}
+{"formId":"0F11B1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Great! Let's go!"}
+{"formId":"015D38:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My blade is yours to command, Thane."}
+{"formId":"015D39:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Lead on, Thane."}
+{"formId":"015D3A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm with you, Thane."}
+{"formId":"05C838:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you will, my Thane. I will protect you with my life."}
+{"formId":"015D3B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you command, my Thane."}
+{"formId":"0F11B0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll be right here. Be careful now!"}
+{"formId":"015D44:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, Thane. Be careful."}
+{"formId":"015D45:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm yours to command, Thane. I'll wait here until you need me."}
+{"formId":"015D46:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Don't be long. My place is by your side."}
+{"formId":"05C83B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you wish, my Thane."}
+{"formId":"015D47:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I will remain on guard here."}
+{"formId":"079B19:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Watch your tongue, stranger. We don't take backtalk in this inn."}
+{"formId":"08D2BE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You came to visit! It's so much better here with Grelod gone. Thanks to you."}
+{"formId":"08D2C0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"When I grow up, I'm going to be an assassin. That way I can help lots of children, just like you."}
+{"formId":"0904ED:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We done?"}
+{"formId":"0904EE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Finally. I got stuff to do, ya know."}
+{"formId":"092A60:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ten septims tomorrow, baby Battle-Born. Or I'm gonna bloody your nose and your lip."}
+{"formId":"092A61:HearthFires.esm","responseIndex":0,"editorId":null,"text":"No! Please! I really don't have any money, Braith! I'll give you ten septims tomorrow. Just don't hit me."}
+{"formId":"092A5E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You'd better give me five septims right now, or I'm going to bloody your nose..."}
+{"formId":"092A5F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I... I don't have any money."}
+{"formId":"092A62:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Battle-Born! Give me your money!"}
+{"formId":"0934E2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes. Braith bullies me all the time. All the elders think I'm a milk drinker 'cause I can't fight. Nobody understands."}
+{"formId":"0934E2:HearthFires.esm","responseIndex":1,"editorId":null,"text":"If you can get Braith to leave me alone, I'll be your best friend... forever! I'll pay you, too! My whole life's savings - two septims!"}
+{"formId":"0934F3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yeah? Why?"}
+{"formId":"011CB6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I name you Thane of Falkreath. Congratulations."}
+{"formId":"011CB6:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I grant you a personal Housecarl, and this weapon from my armory to serve as your badge of office."}
+{"formId":"011CB6:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'll also notify my guards of your new title. Wouldn't want them to think you're part of the common rabble, now."}
+{"formId":"0A349E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I name you Thane of Falkreath. Congratulations."}
+{"formId":"0A349E:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I grant you this weapon from my armory to serve as your badge of office."}
+{"formId":"0A349E:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'll also notify my guards of your new title. Wouldn't want them to think you're part of the common rabble, now."}
+{"formId":"011CB5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I name you Thane of the Pale. Congratulations."}
+{"formId":"011CB5:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I grant you a personal Housecarl, and this weapon from my armory to serve as your badge of office."}
+{"formId":"011CB5:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'll also notify my guards of your new title. Wouldn't want them to think you're part of the common rabble, now."}
+{"formId":"0A34A8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I name you Thane of the Pale. Congratulations."}
+{"formId":"0A34A8:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I grant you this weapon from my armory to serve as your badge of office."}
+{"formId":"0A34A8:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'll also notify my guards of your new title. Wouldn't want them to think you're part of the common rabble, now."}
+{"formId":"011CB4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I name you Thane of Hjaalmarch. Congratulations."}
+{"formId":"011CB4:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I grant you a personal Housecarl, and this weapon from my armory to serve as your badge of office."}
+{"formId":"011CB4:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'll also notify my guards of your new title. Wouldn't want them to think you're part of the common rabble, now."}
+{"formId":"0A34A3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I name you Thane of Hjaalmarch. Congratulations."}
+{"formId":"0A34A3:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I grant you this weapon from my armory to serve as your badge of office."}
+{"formId":"0A34A3:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'll also notify my guards of your new title. Wouldn't want them to think you're part of the common rabble, now."}
+{"formId":"0A4029:HearthFires.esm","responseIndex":0,"editorId":null,"text":"If there's nothing else, I really must ask you to leave."}
+{"formId":"015D0E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Lead on, Thane. My blade is always yours to command."}
+{"formId":"015D0F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Excellent. Lead on, Thane."}
+{"formId":"015D10:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Good. My place is by your side, Thane."}
+{"formId":"0B0EE9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Lead the way."}
+{"formId":"0B2FCD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Five, four, three, two, one... go!"}
+{"formId":"0B2FCE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Five, four, three, two, one... go!"}
+{"formId":"0BE97F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Come back if you want to play tag."}
+{"formId":"0BE9B5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa doesn't like when I talk to customers, anyway."}
+{"formId":"0BEE08:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks for talking to me."}
+{"formId":"0BEE0A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"For a stranger, you're not so bad."}
+{"formId":"002F4C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Where are you thinking?"}
+{"formId":"0CCBDA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll meet you there."}
+{"formId":"0CCBDB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll see you there, then."}
+{"formId":"002F4D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Where?"}
+{"formId":"0CCCD8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very well. I'll meet you there."}
+{"formId":"0CCCDF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"All right. I'll see you there."}
+{"formId":"0CCD3E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"If that's what you want. I'll see you there, soon."}
+{"formId":"0CCD3F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll see you there."}
+{"formId":"0C57F8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Our new home. I'll see you there!"}
+{"formId":"0CCD40:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then I'll see you at home!"}
+{"formId":"0CD58D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A home for the two of us. I'll meet you there."}
+{"formId":"0CD590:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It will be our little nest. I'll be waiting for you there."}
+{"formId":"0CD591:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The two of us, living together. I'll see you at home!"}
+{"formId":"0CD593:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll see you at home, then. Don't keep me waiting!"}
+{"formId":"0CD594:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll be waiting for you at home, then."}
+{"formId":"002F47:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh? Where?"}
+{"formId":"002F4E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You want to move? Where?"}
+{"formId":"002F4F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I was just getting settled in. Where are we going?"}
+{"formId":"002F50:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh really? And where were you thinking?"}
+{"formId":"002F51:HearthFires.esm","responseIndex":0,"editorId":null,"text":"And where would that be?"}
+{"formId":"0C57F7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll get everything ready and meet you there."}
+{"formId":"0BFBBF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Someday I'm going to kill a dragon all by myself."}
+{"formId":"0BFBBD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm eleven years old, and I could take you."}
+{"formId":"0C6E2E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very well, I'll make the arrangements. The next time you visit your house, your new furnishings will be in place."}
+{"formId":"0CB264:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Good to see you. Come on in."}
+{"formId":"0C7B08:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Aren't you a sight for sore eyes."}
+{"formId":"0C7B09:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hello friend. Make yourself at home."}
+{"formId":"0C7917:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Can I help you?"}
+{"formId":"0C7B0A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You lost?"}
+{"formId":"0C7B0B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I trust you're not planning any trouble. What can I do for you, friend?"}
+{"formId":"0E3E90:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bye, mister."}
+{"formId":"0E3E91:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bye, lady."}
+{"formId":"002F0E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(whine)"}
+{"formId":"000C5E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C61:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C6C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C76:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C9F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000CD5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000D40:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000DDA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C5A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C5C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C5F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C63:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C6D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C79:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000CA2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000CD6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000D43:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C59:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C5B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000C6A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(grumble)"}
+{"formId":"000889:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hold on. We didn't know it was you we were messing with. Look, we'll let her go and call it even, all right? No need for any more trouble."}
+{"formId":"00088A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hold on. We didn't know it was you we were messing with. Look, we'll let him go and call it even, all right? No need for any more trouble."}
+{"formId":"00088B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Is that how you want to play it, huh? That's fine with me."}
+{"formId":"00088C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well if you don't have any money, what are we standing here talking about?"}
+{"formId":"000973:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I knew you'd come for me!"}
+{"formId":"000895:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well if you don't have any money, what are we standing here talking about?"}
+{"formId":"000896:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well if you don't have any money, what are we standing here talking about?"}
+{"formId":"000898:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You look like the type who'd rather let your girlfriend die than fork over some gold. And people think we're heartless monsters..."}
+{"formId":"000899:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You look like the type who'd rather let your boyfriend die than fork over some gold. And people think we're heartless monsters..."}
+{"formId":"00089A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Don't worry, we're not monsters. She's fine. We get the money, you get the girl. Everybody wins, right?"}
+{"formId":"00089B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Don't worry, we're not monsters. He's fine. We get the money, you get the guy. Everybody wins, right?"}
+{"formId":"000888:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Maybe you want to read this first."}
+{"formId":"00088D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Relax, hero. She's fine. At least she was. The chief liked her so much, she took her back home. Here's a letter for you."}
+{"formId":"00088E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Relax, hero... he's fine. At least he was. The chief liked him so much, she took him back home. Here's a letter for you."}
+{"formId":"00089C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Don't worry, she's on her way. Just be patient for a minute."}
+{"formId":"00089D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Don't worry, he's on his way. Just be patient for a minute."}
+{"formId":"0008C0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You'd better be on your way now."}
+{"formId":"00089E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well, well. You're a lot smarter than I expected. I hope you brought the gold."}
+{"formId":"00089F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The chief wanted me to tell you... your girlfriend was real nice to us while you were gone."}
+{"formId":"0008A0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The chief wanted me to tell you... your boyfriend was real nice to us while you were gone."}
+{"formId":"0008A1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You gotta talk to the chief. Rochelle."}
+{"formId":"0008A2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I just want to get out of here!"}
+{"formId":"0008A3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I knew you'd come for me!"}
+{"formId":"0008A5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm glad to see you! Let's get out of here!"}
+{"formId":"000890:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll try to hold them off!"}
+{"formId":"000891:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You won't enter this house while I live!"}
+{"formId":"000892:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're stupid. All we wanted was money! They're gonna cut his throat now!"}
+{"formId":"000893:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're stupid. All we wanted was money! They're gonna cut her throat now!"}
+{"formId":"000897:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Could you take a look in the basement? I've been hearing strange noises down there lately."}
+{"formId":"0008A6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I think there's something in the basement. I'm afraid to go down there."}
+{"formId":"0008BD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Get lost."}
+{"formId":"0008BE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You don't want to be bothering me."}
+{"formId":"0008BF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I think you're looking for the chief."}
+{"formId":"0008C2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I can't wait to get back home."}
+{"formId":"0008BC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Have it your way. It isn't worth it. There are easier ways to make money."}
+{"formId":"0008C8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You don't get a second chance with me."}
+{"formId":"000C37:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh yes, of course. It's available to you for purchase."}
+{"formId":"000C51:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course. It's available, if you want to buy it."}
+{"formId":"002D9F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I understand. ...Sorry."}
+{"formId":"003E6D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I know we don't have much money, but I... I wanted to get you something. It's not much, but..."}
+{"formId":"002DA3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I found something for you. It... sounds like things have been bad lately, so... I hope this cheers you up."}
+{"formId":"003E67:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I got you a present, Mama! I hope you like it!"}
+{"formId":"003E68:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I got you a present, Papa! I hope you like it!"}
+{"formId":"003E6A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I got you a present, Ma! I hope you like it!"}
+{"formId":"003E69:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Pa, I got you something! I hope you like it!"}
+{"formId":"003E6B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, I got you something. Hope you like it!"}
+{"formId":"003E6C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Look what I found! Here, take it!"}
+{"formId":"003E65:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Could you give me an allowance?"}
+{"formId":"003E66:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Could I get a few gold to spend? Please?"}
+{"formId":"003006:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course. I didn't mean to meddle in your private affairs."}
+{"formId":"00300A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thank you! Let me know if you have anything you need from me. I'm at your service."}
+{"formId":"002FF7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A fine steading like this needs a good steward. I'd be happy to take on that position, if you'd like."}
+{"formId":"002FF9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you wish."}
+{"formId":"002FFB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, I see. Well, it's possible that the property will still be available when you amass the necessary funds."}
+{"formId":"003000:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You won't regret it. Here's the title to your steading."}
+{"formId":"003000:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Follow the road east from Falkreath, then north at the crossroads. Turn left just past Pinewatch."}
+{"formId":"003007:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, excellent. The Jarl was hoping you would be interested."}
+{"formId":"003007:HearthFires.esm","responseIndex":1,"editorId":null,"text":"It's a fine property. Well-watered, plentiful stands of timber, beautiful view."}
+{"formId":"003008:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There's no house available, but I could sell you a fine piece of land where you could build your own house."}
+{"formId":"003009:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes. It's a fine property. Well-watered, plentiful stands of timber, beautiful view."}
+{"formId":"008783:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Braith is a big meanie. She keeps telling Lars 'n me what to do. I don't wanna play with her anymore."}
+{"formId":"008784:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I played with Lucia in the park today. I feel sorry for her."}
+{"formId":"008785:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Lars is such a milk-drinker. He can't even stand up to a girl."}
+{"formId":"008786:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Dragonsreach is so cool! All the kids there are mean, though."}
+{"formId":"00877C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There are lots of scary people here, Mama. Promise you'll keep me safe?"}
+{"formId":"00877B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mister Brynjolf gave me an apple, Papa! He seems nice."}
+{"formId":"00877D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Maramal said I could visit the temple whenever I wanted."}
+{"formId":"00877E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mister Brynjolf said he could teach me a lot of neat things when I'm older."}
+{"formId":"00877F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I wanna go swimming, but the guards keep yelling at me. The canal's not that dirty..."}
+{"formId":"008776:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Banning said I could come play with his dogs. I want a dog."}
+{"formId":"008777:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I climbed all the way up to the temple, but they said I wasn't old enough to get in. They're just mean."}
+{"formId":"008778:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I hate Markarth. There's nowhere to play! It's all just rocks. Rocks rocks rocks."}
+{"formId":"008779:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Aicantar let me see his museum. It's really nice."}
+{"formId":"008911:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Do you think I could be a Bard? I really like singing."}
+{"formId":"00890E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"When I grow up, I wanna join the Legion!"}
+{"formId":"008773:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Grimvar said a boy used to live in that abandoned house, all alone, 'til the Dark Brotherhood came 'n got him. Scary, huh?"}
+{"formId":"008774:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm gonna join the Stormcloaks. They're the best!"}
+{"formId":"008775:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The Argonians at the docks say they can breathe underwater. I wish I could do that..."}
+{"formId":"008913:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Rolff says I shouldn't go to the Grey Quarter anymore. He said it's not safe there."}
+{"formId":"008912:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I saw a Thalmor the other day. He was really scary!"}
+{"formId":"00890F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The Palace looks so pretty. I wish they'd let me inside..."}
+{"formId":"003EEF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ma took me to the market. We saw this huge fish! I bet even you couldn't lift it!"}
+{"formId":"003EF4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama took me to the market! There were lot of pies and cakes there. She said she'd show me how to bake one!"}
+{"formId":"003EF1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pa said he'd take me hunting soon. I can't wait! I bet I'll bring down a mammoth!"}
+{"formId":"00890D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa said we could go fishing! With my help, I'm sure he'll catch something this time!"}
+{"formId":"008919:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This place is scary. There are monsters in the swamp. I just know it!"}
+{"formId":"00891A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Look at all the snow! I want to go sledding! Or skating!"}
+{"formId":"00891B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's so c-c-cold here! If I play outside for too long, I'm going to freeze solid!"}
+{"formId":"003EF5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Did you need something, papa?"}
+{"formId":"003EF6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You need something, pa?"}
+{"formId":"003EF8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You need something, ma?"}
+{"formId":"003EF7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Did you need something, mama?"}
+{"formId":"008915:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Did you really build this house all by yourself? Wow!"}
+{"formId":"008916:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I went fishing at the lake. I almost caught something!"}
+{"formId":"008917:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I like living here. The lake is so pretty."}
+{"formId":"008781:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I like it here. The tree in the park is so pretty!"}
+{"formId":"008782:HearthFires.esm","responseIndex":0,"editorId":null,"text":"That big tree in the park looks so sad... I feel sorry for it."}
+{"formId":"003ED2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, ma."}
+{"formId":"003ED3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks, ma!"}
+{"formId":"003ED4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, pa."}
+{"formId":"003ECB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa!"}
+{"formId":"003ECC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama!"}
+{"formId":"003ECD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hi Ma!"}
+{"formId":"003ECE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"All right, I'll see you there!"}
+{"formId":"003ECF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Okay! I'll meet you there!"}
+{"formId":"0192CA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh, um, Hi Papa!"}
+{"formId":"0192CB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama!"}
+{"formId":"0192CC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Um... hey, Pa! Welcome home!"}
+{"formId":"0192CD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Um, hey, Ma! Welcome home!"}
+{"formId":"003ED1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Aww... stop teasing me!"}
+{"formId":"003ED5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks, pa!"}
+{"formId":"003ED6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Aww... come on. Just a few more minutes? Please?"}
+{"formId":"003ED7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"But it's not even dark yet!"}
+{"formId":"003ED8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"But I don't want to!"}
+{"formId":"003ED9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're the best! Thanks!"}
+{"formId":"003EDA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What do you want to play?"}
+{"formId":"003EDB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sure! What do you want to play?"}
+{"formId":"003EDC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"All right. Thanks."}
+{"formId":"003EDD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks!"}
+{"formId":"003EDE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wha... seriously? No way... With this, I... I could buy everything in the market! Wow! Thanks!"}
+{"formId":"003EDF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wha? But.... but it's dark out. Is it... really okay?"}
+{"formId":"003E7D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama! You're back!"}
+{"formId":"003E86:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're home!"}
+{"formId":"003E85:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're back!"}
+{"formId":"003E84:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Pa! Welcome back!"}
+{"formId":"003E83:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pa! You're home!"}
+{"formId":"003E82:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Ma! Welcome back!"}
+{"formId":"003E81:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ma! You're home!"}
+{"formId":"003E80:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa! You're home!"}
+{"formId":"003E7F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa! You're back!"}
+{"formId":"003E7E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama! You're home!"}
+{"formId":"007B66:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You got me a present? Wow, thanks, Ma!"}
+{"formId":"007B67:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You got me a present? Wow, thanks, Pa!"}
+{"formId":"007B68:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wow, thanks Mama!"}
+{"formId":"007B69:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wow, thanks Papa!"}
+{"formId":"007B6A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What is it? What is it?"}
+{"formId":"007B6B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You got me a present? Really?"}
+{"formId":"007B6C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wow, really? What'd you get me?"}
+{"formId":"007B6D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This is great! Wow, thanks!"}
+{"formId":"007B6E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Aww..."}
+{"formId":"00891C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh, fine. So many guards on the street here I hardly have to worry."}
+{"formId":"00891D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hmph. This city's crawling with filth. It's everything I can do keep the children safe."}
+{"formId":"00891E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You tell me. Between the Forsworn and the mines, Markarth is no place to raise a child."}
+{"formId":"00891F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh, fine, if you want to bring up little pickpockets. This place is a terrible influence on a child."}
+{"formId":"008920:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As well as can be expected. Dear, this house would work for the two of us, but with children? We need to find a bigger place."}
+{"formId":"008921:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Fine, when we're not fending off attacks by wolves. Or bears. Or giant spiders. Honestly, what were you thinking, sending us out here?"}
+{"formId":"008922:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very well, love. This is a beautiful house, and Solitude is so safe, so diverse. It's a wonderful place to raise a child."}
+{"formId":"008923:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well, love, very well. There's so much history in this city, so many things we can do here."}
+{"formId":"008924:HearthFires.esm","responseIndex":0,"editorId":null,"text":"All right. I do worry, though, no matter how many times the guards say Markarth is safe."}
+{"formId":"008925:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Just fine, love. The weather here is wonderful, perfect for playing outdoors."}
+{"formId":"008926:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Just fine. Whiterun is a lovely city, and there are so many other children here- they all love playing together."}
+{"formId":"008927:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Fine, love. I think the fresh air does wonders for all of us, and this house... it's just perfect."}
+{"formId":"008928:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Fine, just fine. This house is perfect for a growing family."}
+{"formId":"008929:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Great. There's so much history here in Windhelm, so much to learn about our ancestors and our land."}
+{"formId":"00892A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Honestly, I'm a little worried. Markarth is nice enough, but... I wonder if it's really safe for children."}
+{"formId":"00892B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well enough. Riften's a tough city, but... it's a tough world. Kid has to learn to stand up for themselves sometime."}
+{"formId":"00892C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Couldn't be better. Whiterun is perfect for a child- great weather, plenty of space, friends to play with. What more could you want?"}
+{"formId":"00892D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Fine, fine. Living out here on our own will take some getting used to, but I think it'll be good for us."}
+{"formId":"00892E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Meh. Children get soft when they're coddled in a place like this."}
+{"formId":"00892F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Good. This is a city that respects strength. Honors it. A good lesson for children to learn."}
+{"formId":"008930:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Fine, fine. This city's not safe, but... that's good. Keeps a kid on edge, alert. Could keep 'em alive when they grow up."}
+{"formId":"008931:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hmph. This city's crawling with thieves. Cowards. Kid could learn some bad habits here."}
+{"formId":"008932:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Fine, fine. Plenty of kids here to play and spar with. Plenty of trades to learn. It's a good place to raise a child."}
+{"formId":"008933:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Better than ever. Nothing like living off the land to teach you how to fight, how to survive. We'll have a little warrior on our hands in no time."}
+{"formId":"013EE5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Do you... do you think I could keep him for you?"}
+{"formId":"013EE6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Do you... do you think I could keep him?"}
+{"formId":"013EE7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Could I... could I keep him? Please?"}
+{"formId":"013EE8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Could I keep him? Please?"}
+{"formId":"003ECA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Pa!"}
+{"formId":"003EB0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What? Where are we going?"}
+{"formId":"003EB1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What? Where are we going?"}
+{"formId":"003EB2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Really? Where are we going?"}
+{"formId":"003EB3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Really? Where are we going?"}
+{"formId":"003DEB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Okay. You're it!"}
+{"formId":"003DD3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Okay! You stand right there and count to 10... no peeking! Ready? ...Go!"}
+{"formId":"003E0D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Aww..."}
+{"formId":"003E43:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My... my parents died, and... and now I'm all alone..."}
+{"formId":"003E44:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama died, and now I'm... I'm all alone..."}
+{"formId":"003E45:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My papa died and... and I'm all alone..."}
+{"formId":"003E46:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My... my parents died, not too long ago. I... I don't know what to do..."}
+{"formId":"003E47:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My pa died, and... and now I'm all alone."}
+{"formId":"003E48:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My ma died, and... and I don't know what to do..."}
+{"formId":"003E49:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Really? Do you... do you have a place I could live?"}
+{"formId":"003E4A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh, wow! Are you... are you sure? You really wouldn't mind?"}
+{"formId":"003E4B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"...Oh well. Thanks anyway, I suppose..."}
+{"formId":"003E4C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"...Oh well. Thanks anyway, I guess."}
+{"formId":"003E4D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yea! Thanks, Mama! I promise, I'll be the best daughter ever!"}
+{"formId":"003E4E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yea! Thanks, mister- um, Papa! I promise, I'll be the best daughter ever!"}
+{"formId":"000997:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Really? You mean it? Wow, thanks, Ma! I promise, I won't be any trouble at all!"}
+{"formId":"000998:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Really? You mean it? Wow, thanks, Pa! I promise, I won't be any trouble at all!"}
+{"formId":"003E09:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Really? Are you... are you sure?"}
+{"formId":"003F02:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A new home! Wow! I can't wait to see it!"}
+{"formId":"003EFE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I need to get my things and say goodbye to everyone. I'll meet you at home. Thanks! Thanks so much!"}
+{"formId":"003EFF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Just... just let me get my things and say goodbye to everyone. I'll meet you at home. Thanks! Thanks again!"}
+{"formId":"00DDB6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I can't wait!"}
+{"formId":"003F01:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wow! I can't wait to see my new home!"}
+{"formId":"003E1E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"My mother and father brought me here a year ago. They said they'd be back soon, but... they're awfully late."}
+{"formId":"003E1E:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I... I guess it would be all right if you want to adopt me. At least until my real parents get back."}
+{"formId":"003E1F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Name's Samuel. Never met my parents. Grelod said my mother worked here at the Orphanage, but she died when I was born."}
+{"formId":"003E1F:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Constance and the others are nice enough, but I... I want to have a real family."}
+{"formId":"003E20:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm Hroar. You know, like the sound the lion makes? That's what my mother used to say."}
+{"formId":"003E20:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I want to be big and strong like a lion, too. Someday."}
+{"formId":"003E22:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I've been the only girl here since forever. The boys pick on me, and they make me do all the chores."}
+{"formId":"003E22:HearthFires.esm","responseIndex":1,"editorId":null,"text":"You want to adopt one of us, right? I'm strong, I'm fast, I'm smart, I can do anything better than them. Come on, pick me? Please?"}
+{"formId":"003DD9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm sorry, no. Grelod is the headmistress here, and she's decided not to allow any adoptions right now."}
+{"formId":"003DD9:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I... I wish things were otherwise. All of these children deserve a better home. But there's nothing I can do."}
+{"formId":"003DDA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Why yes, yes of course! What a wonderful surprise!"}
+{"formId":"003DDB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very well, let's try this again..."}
+{"formId":"003DDC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You already have children, don't you? I'm sorry, but I can't let you adopt anyone else."}
+{"formId":"003EE0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pick one of the others. I'll be fine."}
+{"formId":"003EE1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Are you really gonna adopt one of us?"}
+{"formId":"003EE2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're here to adopt someone? Really? Oh, wow!"}
+{"formId":"003EE4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pick me! Pick me!"}
+{"formId":"003EE5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This war has created so many orphans, and so few are willing to open their hearts to them..."}
+{"formId":"003DA3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"First, I'll need to ask you a few questions."}
+{"formId":"003D95:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Your name?"}
+{"formId":"003D89:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What do you do for a living?"}
+{"formId":"003E19:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What? If you aren't going to be..."}
+{"formId":"003E19:HearthFires.esm","responseIndex":1,"editorId":null,"text":"...wait. Shor, you're serious! Well, I... all right then."}
+{"formId":"003E1A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What? What kind of a joke is this?"}
+{"formId":"003E1A:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Look, don't waste my time. Come back when you're ready to discuss this for real."}
+{"formId":"003E1B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mmm-hmm..."}
+{"formId":"003E1C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very well."}
+{"formId":"003E1D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"...Look, let's be realistic. You're an adventurer. It's not exactly a safe or reliable profession."}
+{"formId":"003E1D:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I need to be sure your child will have a safe, stable home to grow up in."}
+{"formId":"003E1D:HearthFires.esm","responseIndex":2,"editorId":null,"text":"Show me that you can support a child. Buy a house. Furnish it. Then come back, and we'll talk."}
+{"formId":"003DD7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Where will your child be living?"}
+{"formId":"003DBA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"That's all I need from you. Congratulations! I think you'll make an excellent parent."}
+{"formId":"003DBA:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Go meet the children and decide who you'd like to adopt."}
+{"formId":"003DBA:HearthFires.esm","responseIndex":2,"editorId":null,"text":"Once you've made a decision, I'll collect their things and be sure they make it over to your house."}
+{"formId":"003DD4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm sorry, but until you own a home with a room for your children, I can't allow you to adopt anyone."}
+{"formId":"003DCA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, of course! That's wonderful news!"}
+{"formId":"003DB6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Go on, speak to the children! I'm sure they're eager to meet you."}
+{"formId":"003DA0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Congratulations. I hope you have a wonderful life together."}
+{"formId":"003EAA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bye, Pa!"}
+{"formId":"003EAB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bye, Ma!"}
+{"formId":"003EAC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bye, Mama!"}
+{"formId":"003EAD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bye, Papa!"}
+{"formId":"003EAE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Take care!"}
+{"formId":"003EAF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Stay safe!"}
+{"formId":"014100:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Constance takes good care of us. But... I still want a real home. A real family."}
+{"formId":"014101:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's not too bad here. But... I still miss my parents."}
+{"formId":"014102:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Are you here adopt someone?"}
+{"formId":"014103:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I hate it here. I... I wanna go home."}
+{"formId":"014104:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama..."}
+{"formId":"014105:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Are you... are you going to adopt one of us?"}
+{"formId":"003DC2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh. Hi."}
+{"formId":"003DC3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What... what am I going to do?"}
+{"formId":"003DC4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(Sigh)..."}
+{"formId":"003D81:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Congratulations! If you ever want to adopt another child, you'll always be welcome here."}
+{"formId":"003E64:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Some pretty flowers. I picked them all by myself!"}
+{"formId":"003E0B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hi Mister! Would you like to buy some flowers? Please?"}
+{"formId":"003E0C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hi Lady! Would you like to buy some flowers? Please?"}
+{"formId":"003DBD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh, I... okay. Sorry."}
+{"formId":"003DBE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Not much. But I hope you like them!"}
+{"formId":"003DBF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"They... they're dead. My mama died when I was little. I... I don't remember her very well."}
+{"formId":"003DBF:HearthFires.esm","responseIndex":1,"editorId":null,"text":"My father was a Stormcloak soldier. One day, he left and... didn't come back."}
+{"formId":"003DBF:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I'm all alone. I... I try to sell flowers so I can buy food. It's not much but... what else can I do?"}
+{"formId":"003DC0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Both my parents were in the Legion. There was... an ambush."}
+{"formId":"003DC0:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Katla said she'd feed me if I could make myself useful. I take care of the animals, run errands, that kind of thing."}
+{"formId":"003DC0:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I guess it could be worse. But... I'm sick of sleeping outside with the horses. I want a real home, real parents. Not... this."}
+{"formId":"003E33:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Buy some flowers? Pretty please?"}
+{"formId":"003E34:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Please, won't you buy a flower?"}
+{"formId":"003E35:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm... I'm so cold..."}
+{"formId":"003E36:HearthFires.esm","responseIndex":0,"editorId":null,"text":"No one bought any flowers again today. I... I don't know what to do."}
+{"formId":"003E37:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sorry! Gotta run!"}
+{"formId":"003E38:HearthFires.esm","responseIndex":0,"editorId":null,"text":"One side, comin' through!"}
+{"formId":"003E39:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Move it, move it!"}
+{"formId":"003E3A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Whew! I'm worn out."}
+{"formId":"003E3B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm so tired..."}
+{"formId":"003E3C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mister, could you spare a coin?"}
+{"formId":"003E3D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Lady, could you spare a coin?"}
+{"formId":"003E3E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm so hungry..."}
+{"formId":"003E3F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Just one gold? Please?"}
+{"formId":"003E40:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Talk to Geimund if you want a horse, or Katla if you're looking for work. I can't help you."}
+{"formId":"003E41:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I take care of the horses. And the goats. And the chickens. And the garden."}
+{"formId":"003E42:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You probably want someone else. I'm just the stable boy."}
+{"formId":"003DDF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks... thanks for talking to me."}
+{"formId":"003DE0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Stop by again!"}
+{"formId":"003DE1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm late! Gotta run!"}
+{"formId":"003DE2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Nice talkin' with you."}
+{"formId":"003D98:HearthFires.esm","responseIndex":0,"editorId":null,"text":"They're... dead."}
+{"formId":"003D98:HearthFires.esm","responseIndex":1,"editorId":null,"text":"My pa was a sailor. Took me with him on his last trip. After he got sick, they... put us off here and left without us."}
+{"formId":"003D98:HearthFires.esm","responseIndex":2,"editorId":null,"text":"He... died a few days later. I've tried to make do since then, but... it's been hard. Real hard."}
+{"formId":"0CD610:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This is the happiest day of my life. Where should we live? My home is your home now, of course."}
+{"formId":"003E31:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We're married. I guess we'll need to decide where we're living, won't we? You can always stay with me."}
+{"formId":"003E32:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I guess we have our entire lives together, now. Where should we live? You could stay with me...."}
+{"formId":"0CD60D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We face the world together now. Where should we live? My home is yours."}
+{"formId":"01819F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Married. It doesn't feel like I thought it would, but I'm happy. Where should we live? You could stay with me...."}
+{"formId":"003EBF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"We should find a place with room for your kids, though."}
+{"formId":"003EBA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh, but... you have children, don't you? We'll have to find somewhere with room for them."}
+{"formId":"003EBB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You have children, though, don't you? We'll have to find somewhere with room for them, too."}
+{"formId":"003EBC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"But you have kids, right? We should find a home where we can live together."}
+{"formId":"003D86:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm running food and supplies to the miners."}
+{"formId":"003D86:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Don't pay much, but they let me sleep by the fire in the inn most nights."}
+{"formId":"003EA6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's... it's what Brenuin said I should do. He's the only one that's been nice to me since... since mama..."}
+{"formId":"003EA6:HearthFires.esm","responseIndex":1,"editorId":null,"text":"...since she died. My aunt and uncle took over our farm and threw me out. Said I wasn't good for anything."}
+{"formId":"003EA6:HearthFires.esm","responseIndex":2,"editorId":null,"text":"I wound up here, but... I... I don't know what to do. I miss her so much..."}
+{"formId":"003E16:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I hate it. Everyone feels sorry for me, so they don't treat me too bad, but..."}
+{"formId":"003E6F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Pa! You want to play a game with us?"}
+{"formId":"003E70:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Ma! Want to play a game with us?"}
+{"formId":"003E71:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Pa! You want to play a game with us?"}
+{"formId":"003E72:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hey, Ma! Want to play a game with us?"}
+{"formId":"003E73:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Papa! We're playing a game. Do you want to play?"}
+{"formId":"003E74:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mama! We're playing a game. Do you want to play?"}
+{"formId":"007023:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'd be honored to be your steward. You've built a fine steading here."}
+{"formId":"007024:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll see to it at once."}
+{"formId":"00CD2E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Certainly. I'll have it delivered to the chest near your workbenches."}
+{"formId":"00CD2F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hmm. You might try Gray Pine Goods in Falkreath. They carry all sorts of things like that."}
+{"formId":"00CD30:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Bits and Pieces in Solitude is probably the place to start. They sell all sorts of things like that."}
+{"formId":"00CD31:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You know Belethor's shop in Whiterun? That'd be a good place to start. He carries all sorts of things like that."}
+{"formId":"007025:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll keep an eye out for a good cow to purchase."}
+{"formId":"018DD0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course, sir."}
+{"formId":"018DD1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course, ma'am."}
+{"formId":"0195C2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes? Did you change your mind?"}
+{"formId":"00B0B1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very good, I'll make all the arrangements."}
+{"formId":"00B0B2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm sorry, but you can't afford that right now."}
+{"formId":"00F9A6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I think you'll want a stable before we spend good coin on a horse."}
+{"formId":"00F9A5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You'll need to build a pen for it first."}
+{"formId":"007026:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very good. I'll see about hiring a carriage driver at once."}
+{"formId":"018DCF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It would be pleasant to have some music in the house. I'll make inquiries about retaining the services of a bard."}
+{"formId":"007A8B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, good. There's one I've had my eye on. I'll see if it's still for sale."}
+{"formId":"00823C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Certainly. What did you have in mind?"}
+{"formId":"0094F9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course. What are we running short of?"}
+{"formId":"0094FA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Is there anything else you need?"}
+{"formId":"0094FB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very good, sir."}
+{"formId":"0094FC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very good, ma'am."}
+{"formId":"0094FD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah. Unfortunately, I'm afraid you're a bit short of funds at the moment."}
+{"formId":"009B81:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Doing some building, eh? We can deliver it wherever you need."}
+{"formId":"009B82:HearthFires.esm","responseIndex":0,"editorId":null,"text":"When you've actually got the coin, we can do business."}
+{"formId":"009B83:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll have them hauled over right away."}
+{"formId":"009B84:HearthFires.esm","responseIndex":0,"editorId":null,"text":"That's fine."}
+{"formId":"009B85:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sure thing, friend. I can use a break anyway."}
+{"formId":"009B86:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sure thing, friend. I'll even have it delivered to your building site, no charge."}
+{"formId":"009B87:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I can't just give away good timber."}
+{"formId":"00B0B0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course. What room would you like me to furnish?"}
+{"formId":"007B3A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Did you bring me anything?"}
+{"formId":"007B3B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Did you get me a present?"}
+{"formId":"007F33:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Want to play a game?"}
+{"formId":"007F34:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Let's play a game!"}
+{"formId":"008909:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Make it stop! Please, make it stop!"}
+{"formId":"00890B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I... I'll be all right. Please, just... just make it stop!"}
+{"formId":"000C50:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Let me know if you change your mind."}
+{"formId":"00BE04:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Very well."}
+{"formId":"000C4F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then stop wasting my time."}
+{"formId":"00BE02:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well, that's your business. Was there anything else you needed?"}
+{"formId":"000C55:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Excellent. Then I grant you a title to the land."}
+{"formId":"00BE03:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Excellent. We're glad to have you as a landowner in Hjaalmarch. Here's the title to your steading."}
+{"formId":"00BE03:HearthFires.esm","responseIndex":1,"editorId":null,"text":"If you don't mind getting your feet wet, your best bet is to head north past the mill. The odd tomb or two along the way won't bother you."}
+{"formId":"00BE03:HearthFires.esm","responseIndex":2,"editorId":null,"text":"The land is on the coast, across the Karth delta from Solitude. An inspiring location, as you'll see."}
+{"formId":"000C53:HearthFires.esm","responseIndex":0,"editorId":null,"text":"No, I'm afraid not. But there is land if you want to buy it."}
+{"formId":"00BE06:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, it is. The Jarl thought of you when it came up for sale."}
+{"formId":"00BE06:HearthFires.esm","responseIndex":1,"editorId":null,"text":"It's on the north coast of Hjaalmarch, with a magnificent view of Solitude on its crag. Just the place for a new manor house."}
+{"formId":"00BE07:HearthFires.esm","responseIndex":0,"editorId":null,"text":"There aren't any houses for sale in Morthal. But if you're interested, I could sell you land in the hold where you could build your own house."}
+{"formId":"00BE08:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes. It's on the north coast of Hjaalmarch, with a magnificent view of Solitude on its crag. Just the place for a new manor house."}
+{"formId":"010A2E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I think we may have a problem in the basement. Been hearing a lot of scurrying down there lately."}
+{"formId":"013EDE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll never speak to you again!"}
+{"formId":"013EDF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Why... why did you do that?"}
+{"formId":"013EE0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Leave me alone!"}
+{"formId":"01410D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks. Thanks... for everything, Pa."}
+{"formId":"01410E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thanks. Thanks... for everything, Ma."}
+{"formId":"01410F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I have a family again. I... I can't thank you enough."}
+{"formId":"014110:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This is more than I ever could have hoped for. Thanks. Thanks so much."}
+{"formId":"014111:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Thank you. Thanks... for everything."}
+{"formId":"014113:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I... I know it's not much, but... I've found a few little things. I've put them in the chest in my room."}
+{"formId":"014113:HearthFires.esm","responseIndex":1,"editorId":null,"text":"If you see anything you want, take it. You've done so much for me... it's the least I can do."}
+{"formId":"014114:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I... I know it's not much, but... I've found a few pretty things. They're in the chest in my room."}
+{"formId":"014114:HearthFires.esm","responseIndex":1,"editorId":null,"text":"If you see anything you like, please, take it! You've done so much for me. It's... it's the least I can do."}
+{"formId":"014108:HearthFires.esm","responseIndex":0,"editorId":null,"text":"This is... this is great! It's everything I could have asked for!"}
+{"formId":"014109:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It's... it's everything I could have hoped for."}
+{"formId":"01410A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A real home. A real family. I almost can't believe it."}
+{"formId":"01410B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I... I have a home again. A family. I almost can't believe it."}
+{"formId":"016412:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Is... is that your pet, Mama? He looks really scary!"}
+{"formId":"013EF2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A doggy! Mama, I didn't know you had a doggy! He's so cute..."}
+{"formId":"013EF3:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A dog! Wow, I didn't know you had a dog!"}
+{"formId":"016413:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Is... is that your pet, Papa? He looks really scary!"}
+{"formId":"016414:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Is... is that your pet? Really? Wow, he looks tough!"}
+{"formId":"013EF1:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A doggy! Papa, I didn't know you had a doggy! He's so cute..."}
+{"formId":"013EF5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"A pet! Wow, I didn't know you had a pet!"}
+{"formId":"013ED9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Look, Papa! I made a new friend!"}
+{"formId":"013EDA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Look, Mama! I have a new friend!"}
+{"formId":"013EDB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Pa! Look what followed me home!"}
+{"formId":"013EDC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ma! Look what followed me home!"}
+{"formId":"014106:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well... I heard there's a really nice tailor's in Solitude. And... and maybe the Khajiit sell dolls? They always have the best toys."}
+{"formId":"014107:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm sure the Khajiit would have one- their toys are the best!"}
+{"formId":"014107:HearthFires.esm","responseIndex":1,"editorId":null,"text":"For clothes... there's a tailor's shop in Solitude. I'm sure they'd have lots to choose from."}
+{"formId":"0140FD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'd... I'd really like a dolly. Or maybe a pretty new dress?"}
+{"formId":"0140FE:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well, sweets are always good. Or a new outfit. Or... or maybe a wooden sword? All my friends have swords."}
+{"formId":"015D1E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I await your orders, Thane."}
+{"formId":"015D1F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Is it time to move out?"}
+{"formId":"015D20:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I await your command, Thane."}
+{"formId":"015D21:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, my Thane? Do you need something?"}
+{"formId":"015D22:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What do you need, Thane?"}
+{"formId":"015D23:HearthFires.esm","responseIndex":0,"editorId":null,"text":"What is it, Thane?"}
+{"formId":"015D24:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll stand guard here."}
+{"formId":"015D25:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Be careful, Thane."}
+{"formId":"015D26:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll wait for you here."}
+{"formId":"015D27:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Lead on, my Thane."}
+{"formId":"015D28:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'll follow your lead, Thane."}
+{"formId":"015D29:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Onward, then."}
+{"formId":"01612C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You know what? I like you. You're not afraid to get your hands dirty."}
+{"formId":"01612C:HearthFires.esm","responseIndex":1,"editorId":null,"text":"I hereby grant you permission to purchase property in Falkreath hold. Talk to my steward if you're interested."}
+{"formId":"016400:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Waaaaaaah...."}
+{"formId":"016403:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Milk-drinker."}
+{"formId":"016409:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You... you take that back!"}
+{"formId":"016424:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You can't catch me!"}
+{"formId":"0163ED:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Grr... I'm gonna get you for that!"}
+{"formId":"0163F0:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Skeever-brain!"}
+{"formId":"0163F4:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wolf-breath!"}
+{"formId":"0163F7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Horker-face!"}
+{"formId":"0163FD:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh yeah? Well, I've seen mudcrabs that're smarter than you!"}
+{"formId":"016401:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Elf-ears!"}
+{"formId":"016404:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Draugr-breath!"}
+{"formId":"01640A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Mammoth-nose!"}
+{"formId":"016425:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Well, you smell like a Hagraven. And you look like one, too!"}
+{"formId":"000C2F:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hm. Well, if you change your mind, come see me again."}
+{"formId":"017710:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hmph. Suit yourself. I can't promise someone else won't buy it in the meantime, though."}
+{"formId":"000C2D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then stop wasting my time."}
+{"formId":"01770A:HearthFires.esm","responseIndex":0,"editorId":null,"text":"That's unfortunate. Maybe I misjudged you."}
+{"formId":"000C2E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Then by my right as Jarl, I grant you a title to the land."}
+{"formId":"01770B:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Wonderful. I'll sleep better knowing you're watching the southern marches. Here's the title to your steading."}
+{"formId":"01770B:HearthFires.esm","responseIndex":1,"editorId":null,"text":"Just follow the road south from Dawnstar, past Fort Dunstad, then head south."}
+{"formId":"01770B:HearthFires.esm","responseIndex":2,"editorId":null,"text":"The land is near Giants' Gap, right on the border with Whiterun Hold. You'll almost be in sight of the Loreius Farm, in fact."}
+{"formId":"000C31:HearthFires.esm","responseIndex":0,"editorId":null,"text":"No, I'm sorry. But there is land, available to you for purchase."}
+{"formId":"01770D:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sorry, no houses for sale in Dawnstar right now. But... I could sell you land in the hold where you could build your own house."}
+{"formId":"01770C:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Land? Ah, yes. The Heljarchen estate. I thought of you immediately when it became available."}
+{"formId":"01770C:HearthFires.esm","responseIndex":1,"editorId":null,"text":"It's in the south of the Pale, near Giants' Gap. Just the spot for someone like you to establish a steading."}
+{"formId":"01770E:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Yes, it is. It's in the southern part of the Pale, right on the border with Whiterun Hold. All the room in the world to build your own house."}
+{"formId":"018DD2:HearthFires.esm","responseIndex":0,"editorId":null,"text":"You're a connoisseur, indeed. Not many appreciate the subtle beauty of the flute."}
+{"formId":"018DDC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Sit back and enjoy some classical drumming."}
+{"formId":"018DCC:HearthFires.esm","responseIndex":0,"editorId":null,"text":"The most elegant of instruments. The pinnacle of the bardic art."}
+{"formId":"018DD5:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Certainly. I am trained in the three traditional bardic instruments: lute, drum, and flute. Which would you prefer?"}
+{"formId":"018DDF:HearthFires.esm","responseIndex":0,"editorId":null,"text":"I'm sorry to hear that. It was my honor to have you as a patron. Please let your steward know if you want to hire me again."}
+{"formId":"018DC8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Your wish is my command, as always."}
+{"formId":"018DC9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"It would be my pleasure."}
+{"formId":"018DCA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Of course, anything you like!"}
+{"formId":"0192B9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"(bark)"}
+{"formId":"018DCB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Allow me to introduce myself. I am the bard Llewellyn, known as \"The Nightingale\". Your steward has arranged for me to take service with you."}
+{"formId":"0195DA:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Good day to you. I am Sonir, the bard that your steward has hired. Please let me know if there's anything specific you want to hear."}
+{"formId":"0195DB:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Hello, my name is Oriella, the bard that you asked your steward to hire. I hope my music will be pleasing to you."}
+{"formId":"0195C6:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Oh. Well then, I'd best be on my way."}
+{"formId":"0195D7:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Ah, excellent! We'll just call this a misunderstanding between friends. I've already forgotten it, myself."}
+{"formId":"0195D8:HearthFires.esm","responseIndex":0,"editorId":null,"text":"As you wish. We can consider this incident nothing more than an unfortunate misunderstanding."}
+{"formId":"0195D9:HearthFires.esm","responseIndex":0,"editorId":null,"text":"Good! I knew you couldn't have been serious when you dismissed me. Life without music is hardly worth living, is it?"}

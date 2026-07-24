@@ -1,18 +1,13 @@
 import { callNative, on, Input, browser, writeLogs } from 'skyrimPlatform'
 import translations from './translations.json'
 
-// FormID (6 hex, uppercase, e.g. "055DF8") -> Japanese text. Bundled at build time.
-// Component A will later replace translations.json with the full DeepL-generated table.
+// Key "<Plugin>|<FORMID6>" (e.g. "Skyrim.esm|055DF8") -> Japanese text. Bundled at
+// build time. The plugin qualifier prevents DLC lines from colliding with Skyrim.esm
+// lines that share the same low-24-bit FormID.
 const table: Record<string, string> = translations as Record<string, string>
 
 function log(msg: string): void {
   writeLogs('jp-subtitle', msg)
-}
-
-// The native plugin returns the INFO FormID as a signed Int; read it unsigned and
-// take the low 6 hex digits (plugin load-index 00 for vanilla Skyrim.esm).
-function formIdKey(raw: number): string {
-  return ((raw >>> 0) & 0xffffff).toString(16).padStart(6, '0').toUpperCase()
 }
 
 // Escape a string for safe embedding inside the JS source we hand to the CEF browser.
@@ -35,13 +30,13 @@ function ensureOverlay(): void {
       d.id = 'jp-subtitle-overlay';
       d.style.position = 'fixed';
       d.style.left = '50%';
-      d.style.bottom = '14%';
+      d.style.bottom = '20%';
       d.style.transform = 'translateX(-50%)';
       d.style.maxWidth = '72%';
       d.style.textAlign = 'center';
       d.style.fontFamily = 'sans-serif';
-      d.style.fontSize = '30px';
-      d.style.lineHeight = '1.35';
+      d.style.fontSize = '24px';
+      d.style.lineHeight = '1.3';
       d.style.color = '#ffe9c8';
       d.style.textShadow = '0 0 4px #000, 0 0 8px #000, 0 2px 4px #000';
       d.style.pointerEvents = 'none';
@@ -75,28 +70,35 @@ function hideOverlay(): void {
 }
 
 function translateCurrent(): void {
-  let raw = 0
+  // DIAGNOSTIC MODE (2026-07-23): show exactly what callNative returns, on screen,
+  // so we no longer depend on aligning the (append-only) TS log with the (truncated)
+  // C++ log. Once the bridge is confirmed, revert to the clean version below.
+  let ret: unknown
   try {
-    raw = callNative('JpSubtitle', 'GetCurrentDialogueFormID', undefined) as number
+    ret = callNative('JpSubtitle', 'GetCurrentDialogueKey', undefined)
   } catch (e) {
-    log(`callNative failed: ${e}`)
+    log(`callNative threw: ${e}`)
+    showOverlay(`<span style="color:#ff8080">callNative ERROR: ${esc(String(e))}</span>`)
     return
   }
 
-  if (!raw) {
-    log('no current dialogue FormID (0)')
-    showOverlay('<span style="color:#aaa">（今表示中の字幕はありません）</span>')
+  const rawDesc = `${JSON.stringify(ret)} (type ${typeof ret})`
+  log(`callNative returned ${rawDesc}`)
+
+  const key = ret as string
+  if (!key) {
+    // Show the raw return so we can tell "" from undefined/null on screen.
+    showOverlay(`<span style="color:#ffd080">returned ${esc(rawDesc)}</span>`)
     return
   }
 
-  const key = formIdKey(raw)
   const jp = table[key]
   if (jp) {
     log(`hit ${key} -> ${jp}`)
     showOverlay(jp)
   } else {
     log(`miss ${key} (no translation yet)`)
-    showOverlay(`<span style="color:#ffb0b0">［FormID ${key} の訳は未登録］</span>`)
+    showOverlay(`<span style="color:#ffb0b0">［${key} 未登録］</span>`)
   }
 }
 

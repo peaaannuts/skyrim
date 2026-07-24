@@ -27,3 +27,7 @@ native-plugin/lib/commonlibsse-ng/
 *.user
 Thumbs.db
 .DS_Store
+
+native-plugin/.xmake/
+
+native-plugin/.xmake/
